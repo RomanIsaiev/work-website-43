@@ -1,0 +1,228 @@
+@use "../utils/mixins" as mx;
+
+.header {
+  @include mx.adaptive("padding-top", 60, 0, 0);
+  @include mx.adaptive("padding-bottom", 100, 0, 0);
+  background-image: url(/src/img/header/header-background-desktop-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: 476px) {
+    @include mx.image-2x("/src/img/header/header-background-desktop-2x.jpg");
+  }
+
+  @media (max-width: 475px) {
+    background-image: url(/src/img/header/header-background-mobile-1x.jpg);
+    @include mx.image-2x("/src/img/header/header-background-mobile-2x.jpg");
+  }
+
+  .title {
+    color: #fff;
+    font-family: "Futura PT";
+    @include mx.adaptive("font-size", 160, 49, 0);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 70%; /* 192px */
+    letter-spacing: -6.4px;
+    @include mx.adaptive("letter-spacing", -6.4, -2, 0);
+    text-transform: uppercase;
+
+    @include mx.adaptive("max-width", 1122, 351, 0);
+    width: 100%;
+  }
+
+  .subtitle {
+    font-family: "Futura PT";
+    @include mx.adaptive("font-size", 130, 40, 0);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 156px */
+    @include mx.adaptive("letter-spacing", -5.2, -1.6, 0);
+    text-transform: uppercase;
+
+    background: linear-gradient(
+      92deg,
+      #dfb039 8.51%,
+      #ffda78 54.63%,
+      #dfb039 97.36%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include mx.adaptive("margin-bottom", 20, 10, 0);
+  }
+}
+
+.master-wrapper-mobile {
+  padding: 15px 25px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.15);
+  width: 100%;
+
+  margin-bottom: 30px;
+
+  @media (min-width: 475px) {
+    display: none;
+  }
+}
+
+.master-wrapper-desktop {
+  display: none;
+  padding: calc(10px + (15 - 10) * ((100vw - 375px) / (1920 - 375)))
+    calc(10px + (25 - 10) * ((100vw - 375px) / (1920 - 375)));
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.15);
+  width: 100%;
+
+  @include mx.adaptive("margin-bottom", 70, 30, 0);
+  @include mx.adaptive("max-width", 348, 375, 0);
+
+  @media (min-width: 475px) {
+    display: block;
+  }
+}
+
+.master-text {
+  color: #fff;
+  font-family: "Futura PT";
+  @include mx.adaptive("font-size", 20, 14, 0);
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+}
+
+.master-text span {
+  color: rgba($color: #fff, $alpha: 0.5);
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.desc-wrapper {
+  display: flex;
+  align-items: flex-end;
+
+  @include mx.adaptive("gap", 14, 4, 0);
+  @include mx.adaptive("margin-bottom", 120, 245, 0);
+
+  .text {
+    color: #fff;
+    font-family: "Futura PT";
+    @include mx.adaptive("font-size", 40, 16, 0);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90%; /* 36px */
+    letter-spacing: -0.8px;
+
+    @include mx.adaptive("max-width", 500, 202, 0);
+  }
+
+  .price {
+    padding: calc(3px + (7 - 3) * ((100vw - 375px) / (1920 - 375)))
+      calc(5px + (15 - 5) * ((100vw - 375px) / (1920 - 375)));
+    border-radius: 5px;
+    background: #fff;
+
+    color: #c60000;
+    font-family: "Futura PT";
+    @include mx.adaptive("font-size", 30, 13, 0);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90%; /* 27px */
+    @include mx.adaptive("letter-spacing", -0.6, -0.26, 0);
+    text-transform: uppercase;
+    @include mx.adaptive("max-width", 194, 81, 0);
+    width: 100%;
+  }
+
+  .price span {
+    color: rgba(198, 0, 0, 0.5);
+  }
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  @include mx.adaptive("grid-column-gap", 10, 5, 0);
+  @include mx.adaptive("grid-row-gap", 20, 15, 0);
+
+  @include mx.adaptive("max-width", 850, 345, 0);
+  width: 100%;
+
+  @include mx.adaptive("margin-bottom", 40, 10, 0);
+
+  @media (max-width: 475px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .item {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    text-align: center;
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 22px */
+    letter-spacing: -0.44px;
+
+    width: 100%;
+
+    border-radius: 10px;
+    border: 1.303px solid #ffd676;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 14.068px 0px rgba(255, 221, 85, 0.3);
+    backdrop-filter: blur(6.512972831726074px);
+
+    @include mx.adaptive("font-size", 22, 15, 0);
+    @include mx.adaptive("max-width", 420, 170, 0);
+    @include mx.adaptive("height", 100, 61, 0);
+    padding: calc(18px + (42 - 18) * ((100vw - 375px) / (1920 - 375)))
+      calc(13px + (14 - 13) * ((100vw - 375px) / (1920 - 375)));
+  }
+
+  .image {
+    position: absolute;
+    left: 50%;
+    top: -17%;
+
+    @include mx.adaptive("width", 45, 24, 0);
+    @include mx.adaptive("height", 45, 24, 0);
+
+    transform: translate(-50%);
+  }
+}
+
+.header-button {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 22px */
+  letter-spacing: -0.44px;
+  text-transform: uppercase;
+
+  border-radius: 10px;
+  background: linear-gradient(90deg, #890000 0%, #c60000 50.5%, #890000 100%);
+
+  width: 100%;
+
+  @media (max-width: 475px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mx.adaptive("font-size", 22, 16, 0);
+  @include mx.adaptive("max-width", 850, 345, 0);
+  @include mx.adaptive("padding", 30, 20, 0);
+}

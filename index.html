@@ -1,87 +1,259 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/sass.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SASS Tutorial template</title>
+    <title>Beauty продажі</title>
   </head>
   <body>
-    <div class="wrapper">
-      <main class="main">
+    <header class="header">
+      <div class="master-wrapper-mobile">
+        <p class="master-text">
+          Майстер-група Тетяни Мендусь<br />
+          <span>по запускам онлайн курсів для б’юті</span>
+        </p>
+      </div>
+      <div class="container">
+        <div class="master-wrapper-desktop">
+          <p class="master-text">
+            Майстер-група Тетяни Мендусь<br />
+            <span>по запускам онлайн курсів для б’юті</span>
+          </p>
+        </div>
+        <h1 class="title">Beauty продажі</h1>
+        <p class="subtitle">на мільйон</p>
+        <div class="desc-wrapper">
+          <p class="text">
+            Почни упаковувати свої знання в онлайн курс та вийди на дохід
+          </p>
+          <p class="price">
+            від 10.000$ <br />
+            <span>на місяць</span>
+          </p>
+        </div>
+        <ul class="benefits-list list">
+          <li class="item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/benefits-list/fire-desktop-1x.png 1x,
+                  ./src/img/header/benefits-list/fire-desktop-2x.png 2x
+                "
+                width="45"
+                height="45"
+                media="(min-width: 320px)" />
+              <img
+                class="image"
+                src="./src/img/header/benefits-list/fire-desktop-1x.png"
+                alt="emoji"
+                width="45"
+                height="45"
+            /></picture>
+            Без шаблонних прогрівів
+          </li>
+          <li class="item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/benefits-list/heath-desktop-1x.png 1x,
+                  ./src/img/header/benefits-list/heath-desktop-2x.png 2x
+                "
+                width="45"
+                height="45"
+                media="(min-width: 320px)" />
+              <img
+                class="image"
+                src="./src/img/header/benefits-list/heath-desktop-1x.png"
+                alt="emoji"
+                width="45"
+                height="45"
+            /></picture>
+            Без щоденного ведення сторіс
+          </li>
+          <li class="item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/benefits-list/hand-desktop-1x.png 1x,
+                  ./src/img/header/benefits-list/hand-desktop-2x.png 2x
+                "
+                width="45"
+                height="45"
+                media="(min-width: 320px)" />
+              <img
+                class="image"
+                src="./src/img/header/benefits-list/hand-desktop-1x.png"
+                alt="emoji"
+                width="45"
+                height="45"
+            /></picture>
+            Без команди
+          </li>
+          <li class="item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/benefits-list/earth-desktop-1x.png 1x,
+                  ./src/img/header/benefits-list/earth-desktop-2x.png 2x
+                "
+                width="45"
+                height="45"
+                media="(min-width: 320px)" />
+              <img
+                class="image"
+                src="./src/img/header/benefits-list/earth-desktop-1x.png"
+                alt="emoji"
+                width="45"
+                height="45"
+            /></picture>
+            Без прив’язки до блогу та локації 24/7
+          </li>
+        </ul>
+        <a class="header-button link" href="">пройти діагностику</a>
+      </div>
+    </header>
+    <main>
+      <section class="ready-system">
         <div class="container">
-          <a
-            class="main-logo"
-            href="https://sass-lang.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              class="main-logo-img"
-              src="/src/img/logo-sass.png"
-              alt="Sass logo"
-              width="360"
-              height="360"
-            />
-          </a>
-
-          <h1 class="main-title title">
-            <span>Sass</span> <br />simple starter
-            <a
-              class="main-title-link"
-              href="https://github.com/goitacademy/vite-sass-app-template"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              template
-            </a>
-          </h1>
-
-          <ul class="main-badges badges">
-            <li class="badges-item">
-              <a class="badges-link" href="https://vitejs.dev/" target="_blank">Vite</a>
+          <div class="wrapper">
+            <div class="box">
+              <div class="inner-wrapper">
+                <h2 class="title">Готова система продажів</h2>
+                <p class="text">
+                  <span>❤️</span>онлайн продуктів для б’юті<span>❤️</span>
+                </p>
+              </div>
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/ready-system/money-desktop-1x.png 1x,
+                    ./src/img/ready-system/money-desktop-2x.png 2x
+                  "
+                  width="450"
+                  height="168"
+                  media="(min-width: 320px)" />
+                <img
+                  class="image"
+                  src="./src/img/ready-system/money-desktop-1x.png"
+                  alt="emoji"
+                  width="450"
+                  height="168"
+              /></picture>
+              <button class="ready-system-button" type="button">
+                хочу так само
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="what-teach">
+        <div class="container">
+          <h2 class="title">Чому вчать</h2>
+          <p class="desc">
+            на курсах б’юті майстрів, щоб продавати свої онлайн продукти:
+          </p>
+          <ul class="teach-list list">
+            <li class="teach-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/what-teach/teach-list/teach-01-desktop-1x.png 1x,
+                    ./src/img/what-teach/teach-list/teach-01-desktop-2x.png 2x
+                  "
+                  width="290"
+                  media="(min-width: 320px)" />
+                <img
+                  class="image"
+                  src="./src/img/what-teach/teach-list/teach-01-desktop-1x.png"
+                  alt="women"
+                  width="290"
+              /></picture>
+              Постійно вести інстаграм
             </li>
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://elad2412.github.io/the-new-css-reset/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                The New CSS Reset
-              </a>
+            <li class="teach-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/what-teach/teach-list/teach-02-desktop-1x.png 1x,
+                    ./src/img/what-teach/teach-list/teach-02-desktop-2x.png 2x
+                  "
+                  width="290"
+                  media="(min-width: 320px)" />
+                <img
+                  class="image"
+                  src="./src/img/what-teach/teach-list/teach-02-desktop-1x.png"
+                  alt="women"
+                  width="290"
+              /></picture>
+              Танцювати в сторіс 24/7
             </li>
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://www.npmjs.com/package/autoprefixer"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Autoprefixer
-              </a>
+            <li class="teach-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/what-teach/teach-list/teach-03-desktop-1x.png 1x,
+                    ./src/img/what-teach/teach-list/teach-03-desktop-2x.png 2x
+                  "
+                  width="290"
+                  media="(min-width: 320px)" />
+                <img
+                  class="image"
+                  src="./src/img/what-teach/teach-list/teach-03-desktop-1x.png"
+                  alt="women"
+                  width="290"
+              /></picture>
+              Робити красивий візуал
             </li>
-            <li class="badges-item">
-              <a
-                class="badges-link"
-                href="https://www.npmjs.com/package/postcss-sort-media-queries"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                postcss-sort-media-queries
-              </a>
+            <li class="teach-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/what-teach/teach-list/teach-04-desktop-1x.png 1x,
+                    ./src/img/what-teach/teach-list/teach-04-desktop-2x.png 2x
+                  "
+                  width="290"
+                  media="(min-width: 320px)" />
+                <img
+                  class="image"
+                  src="./src/img/what-teach/teach-list/teach-04-desktop-1x.png"
+                  alt="women"
+                  width="290"
+              /></picture>
+              Робити продажі лише через прогріви в сторіс
             </li>
           </ul>
+          <div class="result-box">
+            <h3 class="result-title">😔 І що в результаті? 😔</h3>
+            <div class="wrapper">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/what-teach/in-result-desktop-1x.png 1x,
+                    ./src/img/what-teach/in-result-desktop-2x.png 2x
+                  "
+                  width="200"
+                  media="(min-width: 320px)" />
+                <img
+                  class="image"
+                  src="./src/img/what-teach/in-result-desktop-1x.png"
+                  alt="women"
+                  width="200"
+              /></picture>
+              <ul class="result-list">
+                <li class="result-item">
+                  «Вилизаний» візуал та постійні сторіс
+                  <span>не дають бажаних результатів</span>
+                </li>
+                <li class="result-item">
+                  У вас купує курс 3-5 людей, ви розчаровуєтесь і закидаєте
+                  онлайн
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer class="footer">
-        <div class="container">
-          Made with ❤ by
-          <a href="https://goit.global/ua/" target="_blank" rel="noopener noreferrer"> GoIT </a>
-        </div>
-      </footer>
-    </div>
-
+      </section>
+    </main>
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
