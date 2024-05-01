@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build --base=/vite-sass-app-template/",
+    "build": "vite build --base=/work-website-43/",
     "preview": "vite preview",
     "watch": "npx vite build --watch"
   },
