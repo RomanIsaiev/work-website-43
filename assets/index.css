@@ -1,18 +1,40 @@
-@charset "UTF-8";
 @font-face {
-  font-family: "Montserrat";
-  src: url("/vite-sass-app-template/assets/Montserrat-Regular.woff2") format("woff2");
-  font-weight: 400;
+  font-family: "Futura PT";
+  src: url("../fonts/FUTURAPT-LIGHT.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Montserrat";
-  src: url("/vite-sass-app-template/assets/Montserrat-Bold.woff2") format("woff2");
+  font-family: "Futura PT";
+  src: url("../fonts/FUTURAPT-BOOK.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FUTURAPT-MEDIUM.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FUTURAPT-BOLD.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FUTURAPT-HEAVY.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
   font-display: swap;
 }
 /***
-    The new CSS reset - version 1.11 (last updated 20.9.2023)
+    The new CSS reset - version 1.11.2 (last updated 15.11.2023)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 /*
@@ -51,7 +73,8 @@ button {
 /* Remove list styles (bullets/numbers) */
 ol,
 ul,
-menu {
+menu,
+summary {
   list-style: none;
 }
 
@@ -109,11 +132,6 @@ meter {
   color: unset;
 }
 
-/* remove default dot (•) sign */
-::marker {
-  content: initial;
-}
-
 /* fix the feature of 'hidden' attribute.
    display:revert; revert to element instead of attribute */
 :where([hidden]) {
@@ -144,161 +162,229 @@ meter {
           box-sizing: border-box;
 }
 
-:root {
-  --main-color: #1e1e20;
-  --second-color: #9b4a73;
-  --mute-color: #313136;
-  --main-text-color: rgba(255, 255, 245, 0.86);
-  --second-text-color: rgba(235, 235, 245, 0.6);
-  --hero-name-background: linear-gradient(120deg, #cd6699 30%, #9b4a73);
-  --brand-color: #cd6699;
-  --brand-light-color: #9b4a73;
-}
-
-html {
-  font-size: 8px;
+/* Remove details summary webkit styles */
+::-webkit-details-marker {
+  display: none;
 }
 
 body {
-  font-family: "Montserrat";
-  background: var(--main-color);
-  color: var(--main-text-color);
-  font-size: 2.4rem;
-  -webkit-transition: background 0.2s ease, color 0.2s ease;
-  -moz-transition: background 0.2s ease, color 0.2s ease;
-  transition: background 0.2s ease, color 0.2s ease;
+  font-family: "Futura PT", sans-serif;
+  margin: 0;
 }
 
-.wrapper {
-  min-height: 100vh;
-  text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: column;
-     -moz-box-orient: vertical;
-     -moz-box-direction: normal;
-          flex-flow: column;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.image {
+  display: block;
 }
 
 .container {
-  max-width: 1180px;
+  padding: 0 -webkit-calc(15px + 55 * (100vw - 375px) / 1545);
+  padding: 0 -moz-calc(15px + 55 * (100vw - 375px) / 1545);
+  padding: 0 calc(15px + 55 * (100vw - 375px) / 1545);
   margin: 0 auto;
-  padding: 0 2rem;
 }
-
-.dark {
-  color-scheme: dark;
+.header {
+  padding-top: -webkit-calc(0px + 60 * (100vw - 375px) / 1545);
+  padding-top: -moz-calc(0px + 60 * (100vw - 375px) / 1545);
+  padding-top: calc(0px + 60 * (100vw - 375px) / 1545);
+  padding-bottom: -webkit-calc(0px + 100 * (100vw - 375px) / 1545);
+  padding-bottom: -moz-calc(0px + 100 * (100vw - 375px) / 1545);
+  padding-bottom: calc(0px + 100 * (100vw - 375px) / 1545);
+  background-image: url(/work-website-43/assets/header-background-desktop-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-
-.title {
-  font-size: 4rem;
-}
-.title span {
-  font-size: 5rem;
+.header .title {
+  color: #fff;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(49px + 111 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(49px + 111 * (100vw - 375px) / 1545);
+  font-size: calc(49px + 111 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 70%; /* 192px */
+  letter-spacing: -6.4px;
+  letter-spacing: -webkit-calc(-2px + -4.4 * (100vw - 375px) / 1545);
+  letter-spacing: -moz-calc(-2px + -4.4 * (100vw - 375px) / 1545);
+  letter-spacing: calc(-2px + -4.4 * (100vw - 375px) / 1545);
   text-transform: uppercase;
-  font-weight: 700;
-  background: var(--hero-name-background);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-
-.footer {
-  padding: 3rem 0;
-  font-size: 1.6rem;
-}
-.footer a {
-  text-decoration: none;
-  color: var(--brand-color);
-  -webkit-transition: 0.2s ease;
-  -moz-transition: 0.2s ease;
-  transition: 0.2s ease;
-}
-.footer a:hover {
-  color: var(--brand-light-color);
-}
-
-.main {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-     -moz-box-flex: 1;
-          flex: 1;
-}
-.main-header {
-  padding: 2.5rem 2rem;
-}
-.main-logo {
-  width: 300px;
-  height: 300px;
-  display: inline-block;
-  position: relative;
-  margin-bottom: 3rem;
-}
-.main-logo::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  width: 70%;
-  height: 70%;
-  -webkit-transform: translate(-50%, -50%);
-     -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: var(--hero-name-background);
-  -webkit-filter: blur(72px);
-          filter: blur(72px);
-}
-.main-logo-img {
+  max-width: -webkit-calc(351px + 771 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(351px + 771 * (100vw - 375px) / 1545);
+  max-width: calc(351px + 771 * (100vw - 375px) / 1545);
   width: 100%;
-  height: 100%;
 }
-.main-title-link {
-  position: relative;
-  -webkit-transition: 200ms ease;
-  -moz-transition: 200ms ease;
-  transition: 200ms ease;
-}
-.main-title-link::before {
-  content: "";
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  -webkit-transform: translateX(-50%) skewX(-10deg);
-     -moz-transform: translateX(-50%) skewX(-10deg);
-      -ms-transform: translateX(-50%) skewX(-10deg);
-          transform: translateX(-50%) skewX(-10deg);
-  z-index: -1;
-  width: 105%;
-  height: 20%;
-  background-color: var(--brand-light-color);
-  -webkit-transition: 200ms ease;
-  -moz-transition: 200ms ease;
-  transition: 200ms ease;
-}
-.main-title-link:hover, .main-title-link:focus {
-  color: var(--brand-light-color);
-}
-.main-title-link:hover::before, .main-title-link:focus::before {
-  background-color: var(--main-text-color);
-}
-.main-badges {
-  margin: 3rem 0 5rem;
+.header .subtitle {
+  font-family: "Futura PT";
+  font-size: -webkit-calc(40px + 90 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(40px + 90 * (100vw - 375px) / 1545);
+  font-size: calc(40px + 90 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 156px */
+  letter-spacing: -webkit-calc(-1.6px + -3.6 * (100vw - 375px) / 1545);
+  letter-spacing: -moz-calc(-1.6px + -3.6 * (100vw - 375px) / 1545);
+  letter-spacing: calc(-1.6px + -3.6 * (100vw - 375px) / 1545);
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(358deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background: -moz-linear-gradient(358deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background: linear-gradient(92deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: -webkit-calc(10px + 10 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(10px + 10 * (100vw - 375px) / 1545);
+  margin-bottom: calc(10px + 10 * (100vw - 375px) / 1545);
 }
 
-.badges {
+.master-wrapper-mobile {
+  padding: 15px 25px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.15);
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.master-wrapper-desktop {
+  display: none;
+  padding: -webkit-calc(10px + 5 * (100vw - 375px) / 1545) -webkit-calc(10px + 15 * (100vw - 375px) / 1545);
+  padding: -moz-calc(10px + 5 * (100vw - 375px) / 1545) -moz-calc(10px + 15 * (100vw - 375px) / 1545);
+  padding: calc(10px + 5 * (100vw - 375px) / 1545) calc(10px + 15 * (100vw - 375px) / 1545);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.15);
+  width: 100%;
+  margin-bottom: -webkit-calc(30px + 40 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(30px + 40 * (100vw - 375px) / 1545);
+  margin-bottom: calc(30px + 40 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(375px + -27 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(375px + -27 * (100vw - 375px) / 1545);
+  max-width: calc(375px + -27 * (100vw - 375px) / 1545);
+}
+
+.master-text {
+  color: #fff;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(14px + 6 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(14px + 6 * (100vw - 375px) / 1545);
+  font-size: calc(14px + 6 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+}
+
+.master-text span {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.desc-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: flex;
-  -webkit-flex-flow: wrap;
-          flex-flow: wrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+     -moz-box-align: end;
+          align-items: flex-end;
+  gap: -webkit-calc(4px + 10 * (100vw - 375px) / 1545);
+  gap: -moz-calc(4px + 10 * (100vw - 375px) / 1545);
+  gap: calc(4px + 10 * (100vw - 375px) / 1545);
+  margin-bottom: -webkit-calc(245px + -125 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(245px + -125 * (100vw - 375px) / 1545);
+  margin-bottom: calc(245px + -125 * (100vw - 375px) / 1545);
+}
+.desc-wrapper .text {
+  color: #fff;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(16px + 24 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(16px + 24 * (100vw - 375px) / 1545);
+  font-size: calc(16px + 24 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 36px */
+  letter-spacing: -0.8px;
+  max-width: -webkit-calc(202px + 298 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(202px + 298 * (100vw - 375px) / 1545);
+  max-width: calc(202px + 298 * (100vw - 375px) / 1545);
+}
+.desc-wrapper .price {
+  padding: -webkit-calc(3px + 4 * (100vw - 375px) / 1545) -webkit-calc(5px + 10 * (100vw - 375px) / 1545);
+  padding: -moz-calc(3px + 4 * (100vw - 375px) / 1545) -moz-calc(5px + 10 * (100vw - 375px) / 1545);
+  padding: calc(3px + 4 * (100vw - 375px) / 1545) calc(5px + 10 * (100vw - 375px) / 1545);
+  border-radius: 5px;
+  background: #fff;
+  color: #c60000;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(13px + 17 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(13px + 17 * (100vw - 375px) / 1545);
+  font-size: calc(13px + 17 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90%; /* 27px */
+  letter-spacing: -webkit-calc(-0.26px + -0.34 * (100vw - 375px) / 1545);
+  letter-spacing: -moz-calc(-0.26px + -0.34 * (100vw - 375px) / 1545);
+  letter-spacing: calc(-0.26px + -0.34 * (100vw - 375px) / 1545);
+  text-transform: uppercase;
+  max-width: -webkit-calc(81px + 113 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(81px + 113 * (100vw - 375px) / 1545);
+  max-width: calc(81px + 113 * (100vw - 375px) / 1545);
+  width: 100%;
+}
+.desc-wrapper .price span {
+  color: rgba(198, 0, 0, 0.5);
+}
+
+.benefits-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  grid-column-gap: -webkit-calc(5px + 5 * (100vw - 375px) / 1545);
+  grid-column-gap: -moz-calc(5px + 5 * (100vw - 375px) / 1545);
+  grid-column-gap: calc(5px + 5 * (100vw - 375px) / 1545);
+  grid-row-gap: -webkit-calc(15px + 5 * (100vw - 375px) / 1545);
+  grid-row-gap: -moz-calc(15px + 5 * (100vw - 375px) / 1545);
+  grid-row-gap: calc(15px + 5 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(345px + 505 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(345px + 505 * (100vw - 375px) / 1545);
+  max-width: calc(345px + 505 * (100vw - 375px) / 1545);
+  width: 100%;
+  margin-bottom: -webkit-calc(10px + 30 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(10px + 30 * (100vw - 375px) / 1545);
+  margin-bottom: calc(10px + 30 * (100vw - 375px) / 1545);
+}
+.benefits-list .item {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
      -moz-box-pack: center;
@@ -307,33 +393,494 @@ body {
   -webkit-align-items: center;
      -moz-box-align: center;
           align-items: center;
-  gap: 2rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 22px */
+  letter-spacing: -0.44px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1.303px solid #ffd676;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 14.068px 0px rgba(255, 221, 85, 0.3);
+          box-shadow: 0px 0px 14.068px 0px rgba(255, 221, 85, 0.3);
+  -webkit-backdrop-filter: blur(6.5129728317px);
+          backdrop-filter: blur(6.5129728317px);
+  font-size: -webkit-calc(15px + 7 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(15px + 7 * (100vw - 375px) / 1545);
+  font-size: calc(15px + 7 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(170px + 250 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(170px + 250 * (100vw - 375px) / 1545);
+  max-width: calc(170px + 250 * (100vw - 375px) / 1545);
+  height: -webkit-calc(61px + 39 * (100vw - 375px) / 1545);
+  height: -moz-calc(61px + 39 * (100vw - 375px) / 1545);
+  height: calc(61px + 39 * (100vw - 375px) / 1545);
+  padding: -webkit-calc(18px + 24 * (100vw - 375px) / 1545) -webkit-calc(13px + 1 * (100vw - 375px) / 1545);
+  padding: -moz-calc(18px + 24 * (100vw - 375px) / 1545) -moz-calc(13px + 1 * (100vw - 375px) / 1545);
+  padding: calc(18px + 24 * (100vw - 375px) / 1545) calc(13px + 1 * (100vw - 375px) / 1545);
 }
-.badges-link {
+.benefits-list .image {
+  position: absolute;
+  left: 50%;
+  top: -17%;
+  width: -webkit-calc(24px + 21 * (100vw - 375px) / 1545);
+  width: -moz-calc(24px + 21 * (100vw - 375px) / 1545);
+  width: calc(24px + 21 * (100vw - 375px) / 1545);
+  height: -webkit-calc(24px + 21 * (100vw - 375px) / 1545);
+  height: -moz-calc(24px + 21 * (100vw - 375px) / 1545);
+  height: calc(24px + 21 * (100vw - 375px) / 1545);
+  -webkit-transform: translate(-50%);
+     -moz-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.header-button {
   display: block;
-  border-radius: 5rem;
-  color: var(--main-text-color);
-  text-decoration: none;
-  background: var(--brand-color);
-  padding: 0.8rem 1.8rem;
-  -webkit-transition: 0.2s ease;
-  -moz-transition: 0.2s ease;
-  transition: 0.2s ease;
-}
-.badges-link:hover {
-  background: var(--brand-light-color);
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 22px */
+  letter-spacing: -0.44px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#890000), color-stop(50.5%, #c60000), to(#890000));
+  background: -webkit-linear-gradient(left, #890000 0%, #c60000 50.5%, #890000 100%);
+  background: -moz-linear-gradient(left, #890000 0%, #c60000 50.5%, #890000 100%);
+  background: linear-gradient(90deg, #890000 0%, #c60000 50.5%, #890000 100%);
+  width: 100%;
+  font-size: -webkit-calc(16px + 6 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(16px + 6 * (100vw - 375px) / 1545);
+  font-size: calc(16px + 6 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(345px + 505 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(345px + 505 * (100vw - 375px) / 1545);
+  max-width: calc(345px + 505 * (100vw - 375px) / 1545);
+  padding: -webkit-calc(20px + 10 * (100vw - 375px) / 1545);
+  padding: -moz-calc(20px + 10 * (100vw - 375px) / 1545);
+  padding: calc(20px + 10 * (100vw - 375px) / 1545);
 }
 
-.no-link {
-  pointer-events: none;
+.ready-system {
+  padding-top: -webkit-calc(50px + 50 * (100vw - 375px) / 1545);
+  padding-top: -moz-calc(50px + 50 * (100vw - 375px) / 1545);
+  padding-top: calc(50px + 50 * (100vw - 375px) / 1545);
+  padding-bottom: -webkit-calc(50px + 100 * (100vw - 375px) / 1545);
+  padding-bottom: -moz-calc(50px + 100 * (100vw - 375px) / 1545);
+  padding-bottom: calc(50px + 100 * (100vw - 375px) / 1545);
+  background: #090909;
+}
+.ready-system .wrapper {
+  padding: -webkit-calc(25px + 75 * (100vw - 375px) / 1545) -webkit-calc(3px + 57 * (100vw - 375px) / 1545);
+  padding: -moz-calc(25px + 75 * (100vw - 375px) / 1545) -moz-calc(3px + 57 * (100vw - 375px) / 1545);
+  padding: calc(25px + 75 * (100vw - 375px) / 1545) calc(3px + 57 * (100vw - 375px) / 1545);
+  border-radius: 37px;
+  border: 1px solid #ffd676;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 221, 85, 0.5);
+          box-shadow: 0px 0px 20px 0px rgba(255, 221, 85, 0.5);
+  max-width: -webkit-calc(475px + 907 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(475px + 907 * (100vw - 375px) / 1545);
+  max-width: calc(475px + 907 * (100vw - 375px) / 1545);
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/work-website-43/assets/ready-system-background-desktop-1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ready-system .box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  max-width: -webkit-calc(315px + 225 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(315px + 225 * (100vw - 375px) / 1545);
+  max-width: calc(315px + 225 * (100vw - 375px) / 1545);
+  width: 100%;
+  margin-left: auto;
+  margin-right: 0;
+}
+.ready-system .inner-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  border: 1px solid #ffd676;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 17.331px 0px rgba(255, 221, 85, 0.5);
+          box-shadow: 0px 0px 17.331px 0px rgba(255, 221, 85, 0.5);
+  -webkit-backdrop-filter: blur(8.6653385162px);
+          backdrop-filter: blur(8.6653385162px);
+  max-width: -webkit-calc(315px + 225 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(315px + 225 * (100vw - 375px) / 1545);
+  max-width: calc(315px + 225 * (100vw - 375px) / 1545);
+  width: 100%;
+  height: -webkit-calc(73px + 66 * (100vw - 375px) / 1545);
+  height: -moz-calc(73px + 66 * (100vw - 375px) / 1545);
+  height: calc(73px + 66 * (100vw - 375px) / 1545);
+  margin-bottom: -webkit-calc(20px + 10 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(20px + 10 * (100vw - 375px) / 1545);
+  margin-bottom: calc(20px + 10 * (100vw - 375px) / 1545);
+  margin-left: auto;
+  margin-right: 0;
+}
+.ready-system .title {
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(20px + 16 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(20px + 16 * (100vw - 375px) / 1545);
+  font-size: calc(20px + 16 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 43.2px */
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(358deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background: -moz-linear-gradient(358deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background: linear-gradient(92deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ready-system .text {
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(22px + 16 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(22px + 16 * (100vw - 375px) / 1545);
+  font-size: calc(22px + 16 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70%;
+  letter-spacing: -1.14px;
+}
+.ready-system .text span {
+  font-size: -webkit-calc(16px + 9 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(16px + 9 * (100vw - 375px) / 1545);
+  font-size: calc(16px + 9 * (100vw - 375px) / 1545);
+}
+.ready-system .image {
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: -webkit-calc(10px + 10 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(10px + 10 * (100vw - 375px) / 1545);
+  margin-bottom: calc(10px + 10 * (100vw - 375px) / 1545);
+  width: -webkit-calc(260px + 190 * (100vw - 375px) / 1545);
+  width: -moz-calc(260px + 190 * (100vw - 375px) / 1545);
+  width: calc(260px + 190 * (100vw - 375px) / 1545);
+  height: auto;
+}
+.ready-system .ready-system-button {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(16px + 8 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(16px + 8 * (100vw - 375px) / 1545);
+  font-size: calc(16px + 8 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 24px */
+  letter-spacing: -0.48px;
+  text-transform: uppercase;
+  padding: -webkit-calc(20px + 10 * (100vw - 375px) / 1545);
+  padding: -moz-calc(20px + 10 * (100vw - 375px) / 1545);
+  padding: calc(20px + 10 * (100vw - 375px) / 1545);
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#890000), color-stop(50.5%, #c60000), to(#890000));
+  background: -webkit-linear-gradient(left, #890000 0%, #c60000 50.5%, #890000 100%);
+  background: -moz-linear-gradient(left, #890000 0%, #c60000 50.5%, #890000 100%);
+  background: linear-gradient(90deg, #890000 0%, #c60000 50.5%, #890000 100%);
+  max-width: -webkit-calc(260px + 190 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(260px + 190 * (100vw - 375px) / 1545);
+  max-width: calc(260px + 190 * (100vw - 375px) / 1545);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (min-width: 767px){
-  html {
-    font-size: 10px;
+.what-teach {
+  padding-top: -webkit-calc(60px + 90 * (100vw - 375px) / 1545);
+  padding-top: -moz-calc(60px + 90 * (100vw - 375px) / 1545);
+  padding-top: calc(60px + 90 * (100vw - 375px) / 1545);
+  padding-bottom: -webkit-calc(60px + 90 * (100vw - 375px) / 1545);
+  padding-bottom: -moz-calc(60px + 90 * (100vw - 375px) / 1545);
+  padding-bottom: calc(60px + 90 * (100vw - 375px) / 1545);
+  background-image: url(/work-website-43/assets/background.svg);
+  background-position: center;
+}
+.what-teach .title {
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(60px + 70 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(60px + 70 * (100vw - 375px) / 1545);
+  font-size: calc(60px + 70 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70%; /* 156px */
+  letter-spacing: -webkit-calc(-2.4pxpx + -2.8px * (100vw - 375px) / 1545);
+  letter-spacing: -moz-calc(-2.4pxpx + -2.8px * (100vw - 375px) / 1545);
+  letter-spacing: calc(-2.4pxpx + -2.8px * (100vw - 375px) / 1545);
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, right top, from(#890000), color-stop(50.5%, #c60000), to(#890000));
+  background: -webkit-linear-gradient(left, #890000 0%, #c60000 50.5%, #890000 100%);
+  background: -moz-linear-gradient(left, #890000 0%, #c60000 50.5%, #890000 100%);
+  background: linear-gradient(90deg, #890000 0%, #c60000 50.5%, #890000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: -webkit-calc(5px + 15 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(5px + 15 * (100vw - 375px) / 1545);
+  margin-bottom: calc(5px + 15 * (100vw - 375px) / 1545);
+}
+.what-teach .desc {
+  color: #090909;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(21px + 19 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(21px + 19 * (100vw - 375px) / 1545);
+  font-size: calc(21px + 19 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 36px */
+  letter-spacing: -0.8px;
+  max-width: -webkit-calc(343px + 407 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(343px + 407 * (100vw - 375px) / 1545);
+  max-width: calc(343px + 407 * (100vw - 375px) / 1545);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -webkit-calc(30px + 30 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(30px + 30 * (100vw - 375px) / 1545);
+  margin-bottom: calc(30px + 30 * (100vw - 375px) / 1545);
+}
+
+.teach-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  gap: -webkit-calc(5px + 15 * (100vw - 375px) / 1545);
+  gap: -moz-calc(5px + 15 * (100vw - 375px) / 1545);
+  gap: calc(5px + 15 * (100vw - 375px) / 1545);
+  margin-bottom: -webkit-calc(80px + 70 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(80px + 70 * (100vw - 375px) / 1545);
+  margin-bottom: calc(80px + 70 * (100vw - 375px) / 1545);
+}
+.teach-list .teach-item {
+  color: #090909;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: 24px;
+  font-size: -webkit-calc(15px + 9 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(15px + 9 * (100vw - 375px) / 1545);
+  font-size: calc(15px + 9 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 450;
+  line-height: 90%; /* 21.6px */
+  letter-spacing: -0.48px;
+  padding-top: -webkit-calc(17px + 17 * (100vw - 375px) / 1545);
+  padding-top: -moz-calc(17px + 17 * (100vw - 375px) / 1545);
+  padding-top: calc(17px + 17 * (100vw - 375px) / 1545);
+  padding-bottom: -webkit-calc(22px + 10 * (100vw - 375px) / 1545);
+  padding-bottom: -moz-calc(22px + 10 * (100vw - 375px) / 1545);
+  padding-bottom: calc(22px + 10 * (100vw - 375px) / 1545);
+  padding-left: -webkit-calc(10px + 10 * (100vw - 375px) / 1545);
+  padding-left: -moz-calc(10px + 10 * (100vw - 375px) / 1545);
+  padding-left: calc(10px + 10 * (100vw - 375px) / 1545);
+  padding-right: -webkit-calc(10px + 10 * (100vw - 375px) / 1545);
+  padding-right: -moz-calc(10px + 10 * (100vw - 375px) / 1545);
+  padding-right: calc(10px + 10 * (100vw - 375px) / 1545);
+  border-radius: 15px;
+  border: 1.938px solid #c60000;
+  -webkit-backdrop-filter: blur(9.6875px);
+          backdrop-filter: blur(9.6875px);
+  max-width: -webkit-calc(170px + 160 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(170px + 160 * (100vw - 375px) / 1545);
+  max-width: calc(170px + 160 * (100vw - 375px) / 1545);
+  heigth: -webkit-calc(208px + 195 * (100vw - 375px) / 1545);
+  heigth: -moz-calc(208px + 195 * (100vw - 375px) / 1545);
+  heigth: calc(208px + 195 * (100vw - 375px) / 1545);
+  width: 100%;
+}
+.teach-list .image {
+  margin-bottom: -webkit-calc(10px + 10 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(10px + 10 * (100vw - 375px) / 1545);
+  margin-bottom: calc(10px + 10 * (100vw - 375px) / 1545);
+  width: -webkit-calc(150px + 140 * (100vw - 375px) / 1545);
+  width: -moz-calc(150px + 140 * (100vw - 375px) / 1545);
+  width: calc(150px + 140 * (100vw - 375px) / 1545);
+  heigth: -webkit-calc(150px + 140 * (100vw - 375px) / 1545);
+  heigth: -moz-calc(150px + 140 * (100vw - 375px) / 1545);
+  heigth: calc(150px + 140 * (100vw - 375px) / 1545);
+}
+
+.result-box .result-title {
+  color: #090909;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(30px + 30 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(30px + 30 * (100vw - 375px) / 1545);
+  font-size: calc(30px + 30 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 80%; /* 48px */
+  letter-spacing: -2.4px;
+  text-transform: uppercase;
+  margin-bottom: -webkit-calc(20px + 20 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(20px + 20 * (100vw - 375px) / 1545);
+  margin-bottom: calc(20px + 20 * (100vw - 375px) / 1545);
+}
+.result-box .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  gap: -webkit-calc(20px + 20 * (100vw - 375px) / 1545);
+  gap: -moz-calc(20px + 20 * (100vw - 375px) / 1545);
+  gap: calc(20px + 20 * (100vw - 375px) / 1545);
+  padding: -webkit-calc(20px + 10 * (100vw - 375px) / 1545);
+  padding: -moz-calc(20px + 10 * (100vw - 375px) / 1545);
+  padding: calc(20px + 10 * (100vw - 375px) / 1545);
+  border-radius: 20px;
+  background: #090909;
+  max-width: -webkit-calc(345px + 333 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(345px + 333 * (100vw - 375px) / 1545);
+  max-width: calc(345px + 333 * (100vw - 375px) / 1545);
+  margin-left: auto;
+  margin-right: auto;
+}
+.result-box .result-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+  gap: -webkit-calc(10px + 10 * (100vw - 375px) / 1545);
+  gap: -moz-calc(10px + 10 * (100vw - 375px) / 1545);
+  gap: calc(10px + 10 * (100vw - 375px) / 1545);
+}
+.result-box .result-item {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Futura PT";
+  font-size: -webkit-calc(16px + 8 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(16px + 8 * (100vw - 375px) / 1545);
+  font-size: calc(16px + 8 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%; /* 24px */
+  letter-spacing: -0.48px;
+  max-width: -webkit-calc(168px + 186 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(168px + 186 * (100vw - 375px) / 1545);
+  max-width: calc(168px + 186 * (100vw - 375px) / 1545);
+}
+.result-box .result-item span {
+  color: #fff;
+}
+@media (min-width: 475px) {
+  .master-wrapper-mobile {
+    display: none;
   }
-  .main-logo {
-    width: 360px;
-    height: 360px;
+  .master-wrapper-desktop {
+    display: block;
+  }
+}
+@media (min-width: 476px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 476px) and (min--moz-device-pixel-ratio: 2), (min-width: 476px) and (min-device-pixel-ratio: 2), (min-width: 476px) and (min-resolution: 192dpi), (min-width: 476px) and (min-resolution: 2dppx) {
+  .header {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("/work-website-43/assets/header-background-desktop-2x.jpg");
+  }
+  .ready-system .wrapper {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("/work-website-43/assets/ready-system-background-desktop-2x.png");
+  }
+}
+@media (max-width: 475px) {
+  .container {
+    max-width: 428px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .header {
+    background-image: url(/work-website-43/assets/header-background-mobile-1x.jpg);
+  }
+  .benefits-list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ready-system {
+    background-image: url(/work-website-43/assets/ready-system-background-mobile-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .ready-system .wrapper {
+    padding-top: 210px;
+    border: inherit;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-image: none;
+  }
+  .ready-system .box {
+    margin-right: auto;
+  }
+}
+@media (max-width: 475px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 475px) and (min--moz-device-pixel-ratio: 2), (max-width: 475px) and (min-device-pixel-ratio: 2), (max-width: 475px) and (min-resolution: 192dpi), (max-width: 475px) and (min-resolution: 2dppx) {
+  .header {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("/work-website-43/assets/header-background-mobile-2x.jpg");
+  }
+  .ready-system {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("/work-website-43/assets/ready-system-background-mobile-2x.jpg");
   }
 }
