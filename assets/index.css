@@ -204,6 +204,10 @@ p {
   padding: 0 calc(15px + 55 * (100vw - 375px) / 1545);
   margin: 0 auto;
 }
+
+button {
+  cursor: pointer;
+}
 .header {
   padding-top: -webkit-calc(0px + 60 * (100vw - 375px) / 1545);
   padding-top: -moz-calc(0px + 60 * (100vw - 375px) / 1545);
@@ -211,10 +215,10 @@ p {
   padding-bottom: -webkit-calc(0px + 100 * (100vw - 375px) / 1545);
   padding-bottom: -moz-calc(0px + 100 * (100vw - 375px) / 1545);
   padding-bottom: calc(0px + 100 * (100vw - 375px) / 1545);
+  background: #090909;
   background-image: url(/work-website-43/assets/header-background-desktop-1x.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-size: 100%;
 }
 .header .container {
   background-image: url(/work-website-43/assets/money-left-desktop-1x.png), url(/work-website-43/assets/money-right-desktop-1x.png);
@@ -638,7 +642,53 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+.ready-system .writing-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+  gap: -webkit-calc(5px + 5 * (100vw - 375px) / 1545);
+  gap: -moz-calc(5px + 5 * (100vw - 375px) / 1545);
+  gap: calc(5px + 5 * (100vw - 375px) / 1545);
+  margin-bottom: -webkit-calc(20px + 20 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(20px + 20 * (100vw - 375px) / 1545);
+  margin-bottom: calc(20px + 20 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(280px + 152 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(280px + 152 * (100vw - 375px) / 1545);
+  max-width: calc(280px + 152 * (100vw - 375px) / 1545);
+}
+.ready-system .writing-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(16px + 8 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(16px + 8 * (100vw - 375px) / 1545);
+  font-size: calc(16px + 8 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 24px */
+  letter-spacing: -0.72px;
+}
 
+.ready-system.second {
+  padding-bottom: 0;
+}
+.ready-system.second .wrapper {
+  background-image: url(/work-website-43/assets/money-left-1x.png), url(/work-website-43/assets/money-right-1x.png), url(/work-website-43/assets/ready-system-background-desktop-1x.png);
+  background-repeat: no-repeat;
+  background-position: left 0 top 0, right 0 bottom -webkit-calc(80px + 70 * (100vw - 375px) / 1545), center;
+  background-position: left 0 top 0, right 0 bottom -moz-calc(80px + 70 * (100vw - 375px) / 1545), center;
+  background-position: left 0 top 0, right 0 bottom calc(80px + 70 * (100vw - 375px) / 1545), center;
+  background-size: -webkit-calc(92px + 150 * (100vw - 375px) / 1545), -webkit-calc(163px + 146 * (100vw - 375px) / 1545), 100%;
+  background-size: -moz-calc(92px + 150 * (100vw - 375px) / 1545), -moz-calc(163px + 146 * (100vw - 375px) / 1545), 100%;
+  background-size: calc(92px + 150 * (100vw - 375px) / 1545), calc(163px + 146 * (100vw - 375px) / 1545), 100%;
+}
 .what-teach {
   padding-top: -webkit-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-top: -moz-calc(60px + 90 * (100vw - 375px) / 1545);
@@ -1076,6 +1126,8 @@ p {
 }
 
 .how-works {
+  position: static;
+  z-index: 0;
   padding-top: -webkit-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-top: -moz-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-top: calc(60px + 90 * (100vw - 375px) / 1545);
@@ -1093,10 +1145,23 @@ p {
   max-width: calc(347px + 1033 * (100vw - 375px) / 1545);
   margin-left: auto;
   margin-right: auto;
-  background-image: url(/work-website-43/assets/background-line.svg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  position: relative;
+}
+.how-works .how-works-image {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  z-index: 1;
+  -webkit-transform: translate(-50%);
+     -moz-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  width: -webkit-calc(372px + 355 * (100vw - 375px) / 1545);
+  width: -moz-calc(372px + 355 * (100vw - 375px) / 1545);
+  width: calc(372px + 355 * (100vw - 375px) / 1545);
+  margin-left: auto;
+  margin-right: auto;
 }
 .how-works .title-container {
   position: relative;
@@ -1180,6 +1245,7 @@ p {
 }
 .how-works-list .list-item {
   position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -1239,6 +1305,8 @@ p {
 }
 
 .works-button {
+  position: relative;
+  z-index: 10;
   display: block;
   color: #fff;
   text-align: center;
@@ -1429,13 +1497,18 @@ p {
   padding-top: -webkit-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-top: -moz-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-top: calc(60px + 90 * (100vw - 375px) / 1545);
-  padding-bottom: -webkit-calc(120px + 80 * (100vw - 375px) / 1545);
-  padding-bottom: -moz-calc(120px + 80 * (100vw - 375px) / 1545);
-  padding-bottom: calc(120px + 80 * (100vw - 375px) / 1545);
   background-image: url(/work-website-43/assets/background-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.master-format .container {
+  background-image: url(/work-website-43/assets/money-right-1x.png);
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 60px;
+  background-size: -webkit-calc(163px + 462 * (100vw - 375px) / 1545);
+  background-size: -moz-calc(163px + 462 * (100vw - 375px) / 1545);
+  background-size: calc(163px + 462 * (100vw - 375px) / 1545);
 }
 .master-format .title-container {
   max-width: -webkit-calc(350px + 290 * (100vw - 375px) / 1545);
@@ -1640,11 +1713,12 @@ p {
 }
 
 .get-subtitle {
+  display: block;
   color: #fff;
   font-family: "Futura PT";
-  font-size: -webkit-calc(62px + 90 * (100vw - 375px) / 1545);
-  font-size: -moz-calc(62px + 90 * (100vw - 375px) / 1545);
-  font-size: calc(62px + 90 * (100vw - 375px) / 1545);
+  font-size: -webkit-calc(60px + 92 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(60px + 92 * (100vw - 375px) / 1545);
+  font-size: calc(60px + 92 * (100vw - 375px) / 1545);
   font-style: normal;
   font-weight: 300;
   line-height: 70%; /* 182.4px */
@@ -1652,6 +1726,769 @@ p {
   letter-spacing: -moz-calc(-4.3px + -6.3 * (100vw - 375px) / 1545);
   letter-spacing: calc(-4.3px + -6.3 * (100vw - 375px) / 1545);
   text-transform: uppercase;
+}
+
+.get-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  gap: -webkit-calc(5px + 18 * (100vw - 375px) / 1545);
+  gap: -moz-calc(5px + 18 * (100vw - 375px) / 1545);
+  gap: calc(5px + 18 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(345px + 855 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(345px + 855 * (100vw - 375px) / 1545);
+  max-width: calc(345px + 855 * (100vw - 375px) / 1545);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -webkit-calc(20px + 30 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(20px + 30 * (100vw - 375px) / 1545);
+  margin-bottom: calc(20px + 30 * (100vw - 375px) / 1545);
+}
+.get-list .get-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(15px + 9 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(15px + 9 * (100vw - 375px) / 1545);
+  font-size: calc(15px + 9 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 23.623px */
+  letter-spacing: -0.472px;
+  max-width: -webkit-calc(170px + 175 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(170px + 175 * (100vw - 375px) / 1545);
+  max-width: calc(170px + 175 * (100vw - 375px) / 1545);
+  height: -webkit-calc(61px + 116 * (100vw - 375px) / 1545);
+  height: -moz-calc(61px + 116 * (100vw - 375px) / 1545);
+  height: calc(61px + 116 * (100vw - 375px) / 1545);
+  width: 100%;
+  padding: -webkit-calc(18px + 42 * (100vw - 375px) / 1545) -webkit-calc(14px + 12 * (100vw - 375px) / 1545);
+  padding: -moz-calc(18px + 42 * (100vw - 375px) / 1545) -moz-calc(14px + 12 * (100vw - 375px) / 1545);
+  padding: calc(18px + 42 * (100vw - 375px) / 1545) calc(14px + 12 * (100vw - 375px) / 1545);
+  border-radius: 8px;
+  border: 1px solid #ffd676;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0px 0px 12.757px 0px rgba(255, 221, 85, 0.3);
+          box-shadow: 0px 0px 12.757px 0px rgba(255, 221, 85, 0.3);
+}
+
+.get-button {
+  display: block;
+  color: #090909;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(16px + 8 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(16px + 8 * (100vw - 375px) / 1545);
+  font-size: calc(16px + 8 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 23.623px */
+  letter-spacing: -0.472px;
+  text-transform: uppercase;
+  border-radius: 8.268px;
+  background: -webkit-linear-gradient(358deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background: -moz-linear-gradient(358deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background: linear-gradient(92deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  max-width: -webkit-calc(345px + 623 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(345px + 623 * (100vw - 375px) / 1545);
+  max-width: calc(345px + 623 * (100vw - 375px) / 1545);
+  width: 100%;
+  padding: -webkit-calc(20px + 10 * (100vw - 375px) / 1545);
+  padding: -moz-calc(20px + 10 * (100vw - 375px) / 1545);
+  padding: calc(20px + 10 * (100vw - 375px) / 1545);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.course-program {
+  background: #090909;
+  padding-top: -webkit-calc(120px + 80 * (100vw - 375px) / 1545);
+  padding-top: -moz-calc(120px + 80 * (100vw - 375px) / 1545);
+  padding-top: calc(120px + 80 * (100vw - 375px) / 1545);
+  padding-bottom: -webkit-calc(50px + 50 * (100vw - 375px) / 1545);
+  padding-bottom: -moz-calc(50px + 50 * (100vw - 375px) / 1545);
+  padding-bottom: calc(50px + 50 * (100vw - 375px) / 1545);
+}
+
+.program-title {
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(78px + 107 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(78px + 107 * (100vw - 375px) / 1545);
+  font-size: calc(78px + 107 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 70%; /* 222.613px */
+  letter-spacing: -webkit-calc(-4.6px + -6.4 * (100vw - 375px) / 1545);
+  letter-spacing: -moz-calc(-4.6px + -6.4 * (100vw - 375px) / 1545);
+  letter-spacing: calc(-4.6px + -6.4 * (100vw - 375px) / 1545);
+  text-transform: uppercase;
+  margin-bottom: -webkit-calc(40px + 60 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(40px + 60 * (100vw - 375px) / 1545);
+  margin-bottom: calc(40px + 60 * (100vw - 375px) / 1545);
+}
+
+/* questions */
+.isOpen .content {
+  display: block;
+}
+
+.question {
+  max-width: -webkit-calc(345px + 445 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(345px + 445 * (100vw - 375px) / 1545);
+  max-width: calc(345px + 445 * (100vw - 375px) / 1545);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.question::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 35px auto;
+  background: #5d5d5d;
+}
+
+.program-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+          justify-content: space-between;
+  margin-bottom: -webkit-calc(35px + 10 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(35px + 10 * (100vw - 375px) / 1545);
+  margin-bottom: calc(35px + 10 * (100vw - 375px) / 1545);
+}
+
+.info-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.program-module {
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(14px + 7 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(14px + 7 * (100vw - 375px) / 1545);
+  font-size: calc(14px + 7 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+  padding: 7px;
+  width: -webkit-calc(90px + 40 * (100vw - 375px) / 1545);
+  width: -moz-calc(90px + 40 * (100vw - 375px) / 1545);
+  width: calc(90px + 40 * (100vw - 375px) / 1545);
+  border-radius: 5px;
+  background: #c60000;
+  border: 1px solid #c60000;
+}
+
+.program-theme {
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(14px + 7 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(14px + 7 * (100vw - 375px) / 1545);
+  font-size: calc(14px + 7 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+  padding: 7px;
+  width: -webkit-calc(90px + 40 * (100vw - 375px) / 1545);
+  width: -moz-calc(90px + 40 * (100vw - 375px) / 1545);
+  width: calc(90px + 40 * (100vw - 375px) / 1545);
+  border-radius: 5px;
+  border: 1px solid #c60000;
+}
+
+.open-close {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  width: -webkit-calc(25px + 20 * (100vw - 375px) / 1545);
+  width: -moz-calc(25px + 20 * (100vw - 375px) / 1545);
+  width: calc(25px + 20 * (100vw - 375px) / 1545);
+  height: -webkit-calc(25px + 20 * (100vw - 375px) / 1545);
+  height: -moz-calc(25px + 20 * (100vw - 375px) / 1545);
+  height: calc(25px + 20 * (100vw - 375px) / 1545);
+}
+
+.symbol-image {
+  display: block;
+  width: -webkit-calc(25px + 20 * (100vw - 375px) / 1545);
+  width: -moz-calc(25px + 20 * (100vw - 375px) / 1545);
+  width: calc(25px + 20 * (100vw - 375px) / 1545);
+  height: -webkit-calc(25px + 20 * (100vw - 375px) / 1545);
+  height: -moz-calc(25px + 20 * (100vw - 375px) / 1545);
+  height: calc(25px + 20 * (100vw - 375px) / 1545);
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  -moz-transition: transform 250ms linear, -moz-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear, -moz-transform 250ms linear;
+}
+
+.question.open .symbol-image {
+  -webkit-transform: rotate(135deg);
+     -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.question-name {
+  color: #fff;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(16px + 10 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(16px + 10 * (100vw - 375px) / 1545);
+  font-size: calc(16px + 10 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  max-width: -webkit-calc(265px + 510 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(265px + 510 * (100vw - 375px) / 1545);
+  max-width: calc(265px + 510 * (100vw - 375px) / 1545);
+}
+
+.question-name span {
+  font-weight: 500;
+}
+
+.content {
+  display: none;
+}
+
+.content-list {
+  margin: 0 0 20px 0;
+  padding: 35px 0 0 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.content-list .list-item {
+  color: #fff;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(15px + 11 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(15px + 11 * (100vw - 375px) / 1545);
+  font-size: calc(15px + 11 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+}
+
+.content-list .list-item span {
+  color: #c60000;
+}
+
+.question-attention {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #cff6b0;
+  background: rgba(255, 255, 255, 0.05);
+  max-width: 315px;
+  max-width: -webkit-calc(345px + 445 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(345px + 445 * (100vw - 375px) / 1545);
+  max-width: calc(345px + 445 * (100vw - 375px) / 1545);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.attention-text {
+  color: #fff;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(15px + 11 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(15px + 11 * (100vw - 375px) / 1545);
+  font-size: calc(15px + 11 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+}
+
+.attention-text span {
+  color: #cff6b0;
+  font-size: -webkit-calc(15px + 11 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(15px + 11 * (100vw - 375px) / 1545);
+  font-size: calc(15px + 11 * (100vw - 375px) / 1545);
+}
+
+.last-question {
+  margin-bottom: 0;
+}
+
+.author {
+  padding-top: -webkit-calc(130px + 130 * (100vw - 375px) / 1545);
+  padding-top: -moz-calc(130px + 130 * (100vw - 375px) / 1545);
+  padding-top: calc(130px + 130 * (100vw - 375px) / 1545);
+  padding-bottom: -webkit-calc(130px + 70 * (100vw - 375px) / 1545);
+  padding-bottom: -moz-calc(130px + 70 * (100vw - 375px) / 1545);
+  padding-bottom: calc(130px + 70 * (100vw - 375px) / 1545);
+  background: #090909;
+  background-image: url(/work-website-43/assets/background-1x2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.author .container {
+  padding-left: -webkit-calc(15px + 55 * (100vw - 375px) / 1545);
+  padding-left: -moz-calc(15px + 55 * (100vw - 375px) / 1545);
+  padding-left: calc(15px + 55 * (100vw - 375px) / 1545);
+}
+
+.author-title-container {
+  max-width: -webkit-calc(350px + 700 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(350px + 700 * (100vw - 375px) / 1545);
+  max-width: calc(350px + 700 * (100vw - 375px) / 1545);
+  margin-bottom: -webkit-calc(396px + -230 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(396px + -230 * (100vw - 375px) / 1545);
+  margin-bottom: calc(396px + -230 * (100vw - 375px) / 1545);
+}
+.author-title-container .author-title {
+  font-family: "Futura PT";
+  font-size: -webkit-calc(120px + 240 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(120px + 240 * (100vw - 375px) / 1545);
+  font-size: calc(120px + 240 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90%; /* 324px */
+  letter-spacing: -webkit-calc(-6px + -12 * (100vw - 375px) / 1545);
+  letter-spacing: -moz-calc(-6px + -12 * (100vw - 375px) / 1545);
+  letter-spacing: calc(-6px + -12 * (100vw - 375px) / 1545);
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(358deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background: -moz-linear-gradient(358deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background: linear-gradient(92deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.author-title-container .author-subttile {
+  display: block;
+  color: #fff;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(55px + 104 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(55px + 104 * (100vw - 375px) / 1545);
+  font-size: calc(55px + 104 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 70%; /* 190.8px */
+  letter-spacing: -webkit-calc(-3.85px + -7.15 * (100vw - 375px) / 1545);
+  letter-spacing: -moz-calc(-3.85px + -7.15 * (100vw - 375px) / 1545);
+  letter-spacing: calc(-3.85px + -7.15 * (100vw - 375px) / 1545);
+  text-transform: uppercase;
+}
+
+.author-name {
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(30px + 20 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(30px + 20 * (100vw - 375px) / 1545);
+  font-size: calc(30px + 20 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 60px */
+  letter-spacing: -webkit-calc(-1.5px + -1 * (100vw - 375px) / 1545);
+  letter-spacing: -moz-calc(-1.5px + -1 * (100vw - 375px) / 1545);
+  letter-spacing: calc(-1.5px + -1 * (100vw - 375px) / 1545);
+  text-transform: uppercase;
+  padding: -webkit-calc(20px + 10 * (100vw - 375px) / 1545);
+  padding: -moz-calc(20px + 10 * (100vw - 375px) / 1545);
+  padding: calc(20px + 10 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(315px + 135 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(315px + 135 * (100vw - 375px) / 1545);
+  max-width: calc(315px + 135 * (100vw - 375px) / 1545);
+  margin-left: auto;
+  margin-right: 0;
+  border-radius: 7px;
+  border: 1px solid #ffd676;
+  background: rgba(255, 255, 255, 0.07);
+  /* Drop Shadow */
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 221, 85, 0.5);
+          box-shadow: 0px 0px 10px 0px rgba(255, 221, 85, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  margin-bottom: -webkit-calc(40px + 110 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(40px + 110 * (100vw - 375px) / 1545);
+  margin-bottom: calc(40px + 110 * (100vw - 375px) / 1545);
+}
+
+.achievement-container .achievement-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  gap: 30px;
+  margin-bottom: -webkit-calc(30px + 20 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(30px + 20 * (100vw - 375px) / 1545);
+  margin-bottom: calc(30px + 20 * (100vw - 375px) / 1545);
+}
+.achievement-container .achievement-list .item {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(16px + 8 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(16px + 8 * (100vw - 375px) / 1545);
+  font-size: calc(16px + 8 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%; /* 24px */
+  letter-spacing: -webkit-calc(-0.5px + -0.2 * (100vw - 375px) / 1545);
+  letter-spacing: -moz-calc(-0.5px + -0.2 * (100vw - 375px) / 1545);
+  letter-spacing: calc(-0.5px + -0.2 * (100vw - 375px) / 1545);
+  padding: -webkit-calc(20px + 10 * (100vw - 375px) / 1545);
+  padding: -moz-calc(20px + 10 * (100vw - 375px) / 1545);
+  padding: calc(20px + 10 * (100vw - 375px) / 1545);
+  border-radius: 10px;
+  border: 1px solid #bf0000;
+  background: rgba(255, 255, 255, 0.07);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(198, 0, 0, 0.6);
+          box-shadow: 0px 0px 15px 0px rgba(198, 0, 0, 0.6);
+}
+.achievement-container .achievement-list .item span {
+  color: #ffd676;
+}
+.achievement-container .achievement-list .box {
+  position: relative;
+  height: -webkit-calc(354px + 144 * (100vw - 375px) / 1545);
+  height: -moz-calc(354px + 144 * (100vw - 375px) / 1545);
+  height: calc(354px + 144 * (100vw - 375px) / 1545);
+  width: -webkit-calc(275px + 105 * (100vw - 375px) / 1545);
+  width: -moz-calc(275px + 105 * (100vw - 375px) / 1545);
+  width: calc(275px + 105 * (100vw - 375px) / 1545);
+}
+.achievement-container .achievement-list .image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  margin-top: -webkit-calc(20px + 10 * (100vw - 375px) / 1545);
+  margin-top: -moz-calc(20px + 10 * (100vw - 375px) / 1545);
+  margin-top: calc(20px + 10 * (100vw - 375px) / 1545);
+  width: -webkit-calc(275px + 105 * (100vw - 375px) / 1545);
+  width: -moz-calc(275px + 105 * (100vw - 375px) / 1545);
+  width: calc(275px + 105 * (100vw - 375px) / 1545);
+  height: -webkit-calc(275px + 105 * (100vw - 375px) / 1545);
+  height: -moz-calc(275px + 105 * (100vw - 375px) / 1545);
+  height: calc(275px + 105 * (100vw - 375px) / 1545);
+}
+
+.achievement-button {
+  display: block;
+  color: #090909;
+  text-align: center;
+  font-family: "Futura PT";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  padding: -webkit-calc(20px + 10 * (100vw - 375px) / 1545);
+  padding: -moz-calc(20px + 10 * (100vw - 375px) / 1545);
+  padding: calc(20px + 10 * (100vw - 375px) / 1545);
+  border-radius: 7px;
+  background: -webkit-linear-gradient(358deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background: -moz-linear-gradient(358deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background: linear-gradient(92deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  max-width: -webkit-calc(315px + 1065 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(315px + 1065 * (100vw - 375px) / 1545);
+  max-width: calc(315px + 1065 * (100vw - 375px) / 1545);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-questions {
+  background: #090909;
+  padding-top: -webkit-calc(50px + 50 * (100vw - 375px) / 1545);
+  padding-top: -moz-calc(50px + 50 * (100vw - 375px) / 1545);
+  padding-top: calc(50px + 50 * (100vw - 375px) / 1545);
+  padding-bottom: -webkit-calc(100px + 100 * (100vw - 375px) / 1545);
+  padding-bottom: -moz-calc(100px + 100 * (100vw - 375px) / 1545);
+  padding-bottom: calc(100px + 100 * (100vw - 375px) / 1545);
+}
+
+.question-title-container {
+  position: relative;
+  margin-bottom: -webkit-calc(30px + 30 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(30px + 30 * (100vw - 375px) / 1545);
+  margin-bottom: calc(30px + 30 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(350px + 467 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(350px + 467 * (100vw - 375px) / 1545);
+  max-width: calc(350px + 467 * (100vw - 375px) / 1545);
+  margin-left: auto;
+  margin-right: auto;
+}
+.question-title-container .question-title {
+  color: #fff;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(44px + 65 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(44px + 65 * (100vw - 375px) / 1545);
+  font-size: calc(44px + 65 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 131.012px */
+  letter-spacing: -webkit-calc(-3px + -4.6 * (100vw - 375px) / 1545);
+  letter-spacing: -moz-calc(-3px + -4.6 * (100vw - 375px) / 1545);
+  letter-spacing: calc(-3px + -4.6 * (100vw - 375px) / 1545);
+  text-transform: uppercase;
+}
+.question-title-container .question-subtitle {
+  font-family: "Futura PT";
+  font-size: -webkit-calc(40px + 83 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(40px + 83 * (100vw - 375px) / 1545);
+  font-size: calc(40px + 83 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70%; /* 147.388px */
+  letter-spacing: -webkit-calc(-2px + -4.1 * (100vw - 375px) / 1545);
+  letter-spacing: -moz-calc(-2px + -4.1 * (100vw - 375px) / 1545);
+  letter-spacing: calc(-2px + -4.1 * (100vw - 375px) / 1545);
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(358deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background: -moz-linear-gradient(358deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background: linear-gradient(92deg, #dfb039 8.51%, #ffda78 54.63%, #dfb039 97.36%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.question-title-container .image {
+  position: absolute;
+  right: 20px;
+  bottom: -10px;
+  width: -webkit-calc(81px + 74 * (100vw - 375px) / 1545);
+  width: -moz-calc(81px + 74 * (100vw - 375px) / 1545);
+  width: calc(81px + 74 * (100vw - 375px) / 1545);
+  height: -webkit-calc(108px + 99 * (100vw - 375px) / 1545);
+  height: -moz-calc(108px + 99 * (100vw - 375px) / 1545);
+  height: calc(108px + 99 * (100vw - 375px) / 1545);
+}
+
+/* faq-02 */
+.isOpen .content-two {
+  display: block;
+}
+
+.content-two {
+  display: none;
+}
+
+.question-two {
+  position: relative;
+  max-width: -webkit-calc(350px + 467 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(350px + 467 * (100vw - 375px) / 1545);
+  max-width: calc(350px + 467 * (100vw - 375px) / 1545);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.question-two::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 30px auto;
+  background: #5d5d5d;
+}
+
+.question-two-name {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+          justify-content: space-between;
+}
+
+.question-name-two {
+  color: #fff;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(16px + 11 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(16px + 11 * (100vw - 375px) / 1545);
+  font-size: calc(16px + 11 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 15px */
+  letter-spacing: -0.3px;
+  max-width: -webkit-calc(265px + 401 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(265px + 401 * (100vw - 375px) / 1545);
+  max-width: calc(265px + 401 * (100vw - 375px) / 1545);
+}
+
+.content-text-two {
+  padding-top: 20px;
+  color: #fff;
+  font-family: "Futura PT";
+  font-size: -webkit-calc(16px + 11 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(16px + 11 * (100vw - 375px) / 1545);
+  font-size: calc(16px + 11 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 15px */
+  letter-spacing: -0.3px;
+  max-width: -webkit-calc(265px + 401 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(265px + 401 * (100vw - 375px) / 1545);
+  max-width: calc(265px + 401 * (100vw - 375px) / 1545);
+}
+
+.question-two.open .symbol-image {
+  -webkit-transform: rotate(135deg);
+     -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.footer {
+  background: #090909;
+  padding-top: -webkit-calc(50px + 50 * (100vw - 375px) / 1545);
+  padding-top: -moz-calc(50px + 50 * (100vw - 375px) / 1545);
+  padding-top: calc(50px + 50 * (100vw - 375px) / 1545);
+  padding-bottom: -webkit-calc(30px + 70 * (100vw - 375px) / 1545);
+  padding-bottom: -moz-calc(30px + 70 * (100vw - 375px) / 1545);
+  padding-bottom: calc(30px + 70 * (100vw - 375px) / 1545);
+}
+
+.creator-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  gap: 5px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+}
+
+.developer-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Futura PT";
+  font-size: -webkit-calc(15px + 9 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(15px + 9 * (100vw - 375px) / 1545);
+  font-size: calc(15px + 9 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.insta-icon {
+  display: block;
+  width: -webkit-calc(14px + 10 * (100vw - 375px) / 1545);
+  width: -moz-calc(14px + 10 * (100vw - 375px) / 1545);
+  width: calc(14px + 10 * (100vw - 375px) / 1545);
+  height: -webkit-calc(14px + 10 * (100vw - 375px) / 1545);
+  height: -moz-calc(14px + 10 * (100vw - 375px) / 1545);
+  height: calc(14px + 10 * (100vw - 375px) / 1545);
+}
+
+.insta-nickname {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Futura PT";
+  font-size: -webkit-calc(15px + 9 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(15px + 9 * (100vw - 375px) / 1545);
+  font-size: calc(15px + 9 * (100vw - 375px) / 1545);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  -webkit-text-decoration-line: underline;
+     -moz-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 @media (min-width: 475px) {
@@ -1675,6 +2512,28 @@ p {
   .difference {
     /* on retina, use image that's scaled by 2 */
     background-image: url("/work-website-43/assets/background-desktop-2x.jpg");
+  }
+}
+
+@media (max-width: 600px) {
+  .author-title-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .author-name {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .author {
+    background-image: url(/work-website-43/assets/background-mobile-1x.jpg);
+  }
+}
+
+@media (max-width: 476px) {
+  .ready-system.second .wrapper {
+    background-image: none;
   }
 }
 
@@ -1727,6 +2586,9 @@ p {
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header .container {
     background-image: url(/work-website-43/assets/money-left-desktop-2x.png), url(/work-website-43/assets/money-right-desktop-2x.png);
+  }
+  .ready-system.second .wrapper {
+    background-image: url(/work-website-43/assets/money-left-2x.png), url(/work-website-43/assets/money-right-2x.png), url(/work-website-43/assets/ready-system-background-desktop-2x.png);
   }
   .master-format {
     background-image: url(/work-website-43/assets/background-2x.jpg);
