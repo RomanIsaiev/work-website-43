@@ -2,11 +2,20 @@
 
 .master-format {
   @include mx.adaptive("padding-top", 150, 60, 0);
-  @include mx.adaptive("padding-bottom", 200, 120, 0);
+
   background-image: url(/src/img/master-format/background-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  .container {
+    background-image: url(/src/img/master-format/money-right-1x.png);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 60px;
+    background-size: calc(
+      163px + (625 - 163) * ((100vw - 375px) / (1920 - 375))
+    );
+  }
 
   .title-container {
     @include mx.adaptive("max-width", 640, 350, 0);
@@ -144,9 +153,6 @@
 
 //  you get container
 
-.you-get-container {
-}
-
 .get-title-container {
   @include mx.adaptive("max-width", 870, 350, 0);
   margin-left: auto;
@@ -176,9 +182,10 @@
 }
 
 .get-subtitle {
+  display: block;
   color: #fff;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 152, 62, 0);
+  @include mx.adaptive("font-size", 152, 60, 0);
   font-style: normal;
   font-weight: 300;
   line-height: 70%; /* 182.4px */
@@ -187,10 +194,70 @@
 }
 
 .get-list {
-}
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  @include mx.adaptive("gap", 23, 5, 0);
 
-.get-item {
+  @include mx.adaptive("max-width", 1200, 345, 0);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mx.adaptive("margin-bottom", 50, 20, 0);
+
+  .get-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+    text-align: center;
+    font-family: "Futura PT";
+    @include mx.adaptive("font-size", 24, 15, 0);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 23.623px */
+    letter-spacing: -0.472px;
+
+    @include mx.adaptive("max-width", 345, 170, 0);
+    @include mx.adaptive("height", 177, 61, 0);
+    width: 100%;
+
+    padding: calc(18px + (60 - 18) * ((100vw - 375px) / (1920 - 375)))
+      calc(14px + (26 - 14) * ((100vw - 375px) / (1920 - 375)));
+
+    border-radius: 8px;
+    border: 1px solid #ffd676;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 12.757px 0px rgba(255, 221, 85, 0.3);
+    // backdrop-filter: blur(1px);
+  }
 }
 
 .get-button {
+  display: block;
+  color: #090909;
+  text-align: center;
+  font-family: "Futura PT";
+  @include mx.adaptive("font-size", 24, 16, 0);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 23.623px */
+  letter-spacing: -0.472px;
+  text-transform: uppercase;
+
+  border-radius: 8.268px;
+  background: linear-gradient(
+    92deg,
+    #dfb039 8.51%,
+    #ffda78 54.63%,
+    #dfb039 97.36%
+  );
+
+  @include mx.adaptive("max-width", 968, 345, 0);
+  width: 100%;
+  padding: calc(20px + (30 - 20) * ((100vw - 375px) / (1920 - 375)));
+  margin-left: auto;
+  margin-right: auto;
 }

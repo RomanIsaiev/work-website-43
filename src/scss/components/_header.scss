@@ -3,10 +3,11 @@
 .header {
   @include mx.adaptive("padding-top", 60, 0, 0);
   @include mx.adaptive("padding-bottom", 100, 0, 0);
+  background: #090909;
   background-image: url(/src/img/header/header-background-desktop-1x.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  // background-position: center;
+  background-size: 100%;
 
   .container {
     background-image: url(/src/img/header/money-left-desktop-1x.png),

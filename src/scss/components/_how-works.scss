@@ -1,6 +1,8 @@
 @use "../utils/mixins" as mx;
 
 .how-works {
+  position: static;
+  z-index: 0;
   @include mx.adaptive("padding-top", 150, 60, 0);
   @include mx.adaptive("padding-bottom", 150, 60, 0);
 
@@ -14,10 +16,21 @@
     margin-left: auto;
     margin-right: auto;
 
-    background-image: url(/src/img/how-works/background-line.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .how-works-image {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    z-index: 1;
+
+    transform: translate(-50%);
+
+    @include mx.adaptive("width", 727, 372, 0);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .title-container {
@@ -80,6 +93,7 @@
 
   .list-item {
     position: relative;
+    z-index: 1;
 
     display: flex;
     align-items: center;
@@ -123,6 +137,9 @@
 }
 
 .works-button {
+  position: relative;
+  z-index: 10;
+
   display: block;
   color: #fff;
   text-align: center;

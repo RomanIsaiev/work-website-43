@@ -37,6 +37,10 @@ p {
   margin: 0 auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 @media (max-width: 475px) {
   .container {
     max-width: 428px;
