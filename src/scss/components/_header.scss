@@ -12,7 +12,9 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(/src/img/header/header-background-mobile-2x.jpg);
+    .header {
+      background-image: url(/src/img/header/header-background-mobile-2x.jpg);
+    }
   }
 
   @media (min-width: 475px) {
@@ -27,7 +29,9 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/img/header/header-background-tablet-2x.jpg);
+      .header {
+        background-image: url(/src/img/header/header-background-tablet-2x.jpg);
+      }
     }
   }
 
@@ -39,7 +43,9 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/img/header/header-background-tablet-2x.jpg);
+      .header {
+        background-image: url(/src/img/header/header-background-tablet-2x.jpg);
+      }
     }
   }
 
@@ -51,7 +57,9 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/src/img/header/header-background-desktop-2x.jpg);
+      .header {
+        background-image: url(/src/img/header/header-background-desktop-2x.jpg);
+      }
     }
   }
 
