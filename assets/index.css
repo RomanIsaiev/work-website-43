@@ -723,9 +723,9 @@ button {
   background-position: left 0 top 0, right 0 bottom -webkit-calc(80px + 70 * (100vw - 375px) / 1545), center;
   background-position: left 0 top 0, right 0 bottom -moz-calc(80px + 70 * (100vw - 375px) / 1545), center;
   background-position: left 0 top 0, right 0 bottom calc(80px + 70 * (100vw - 375px) / 1545), center;
-  background-size: -webkit-calc(92px + 150 * (100vw - 375px) / 1545), -webkit-calc(163px + 146 * (100vw - 375px) / 1545), 100%;
-  background-size: -moz-calc(92px + 150 * (100vw - 375px) / 1545), -moz-calc(163px + 146 * (100vw - 375px) / 1545), 100%;
-  background-size: calc(92px + 150 * (100vw - 375px) / 1545), calc(163px + 146 * (100vw - 375px) / 1545), 100%;
+  background-size: -webkit-calc(92px + 150 * (100vw - 375px) / 1545), -webkit-calc(163px + 146 * (100vw - 375px) / 1545), 120%;
+  background-size: -moz-calc(92px + 150 * (100vw - 375px) / 1545), -moz-calc(163px + 146 * (100vw - 375px) / 1545), 120%;
+  background-size: calc(92px + 150 * (100vw - 375px) / 1545), calc(163px + 146 * (100vw - 375px) / 1545), 120%;
 }
 .what-teach {
   padding-top: -webkit-calc(60px + 90 * (100vw - 375px) / 1545);
@@ -2595,13 +2595,6 @@ button {
   }
 }
 
-@media (min-width: 549px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 549px) and (min--moz-device-pixel-ratio: 2), (min-width: 549px) and (min-device-pixel-ratio: 2), (min-width: 549px) and (min-resolution: 192dpi), (min-width: 549px) and (min-resolution: 2dppx) {
-  .ready-system .wrapper {
-    /* on retina, use image that's scaled by 2 */
-    background-image: url("/assets/ready-system-background-desktop-2x.png");
-  }
-}
-
 @media (min-width: 550px) {
   .master-wrapper-mobile {
     display: none;
@@ -2644,6 +2637,11 @@ button {
     background-image: url(/assets/header-background-tablet-1x.jpg);
     background-position: unset;
     background-size: 100%;
+  }
+  .ready-system.second .wrapper {
+    background-size: -webkit-calc(92px + 150 * (100vw - 375px) / 1545), -webkit-calc(163px + 146 * (100vw - 375px) / 1545), 100%;
+    background-size: -moz-calc(92px + 150 * (100vw - 375px) / 1545), -moz-calc(163px + 146 * (100vw - 375px) / 1545), 100%;
+    background-size: calc(92px + 150 * (100vw - 375px) / 1545), calc(163px + 146 * (100vw - 375px) / 1545), 100%;
   }
 }
 
@@ -2726,7 +2724,6 @@ button {
   .ready-system {
     background-image: url(/assets/ready-system-background-mobile-1x.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
   }
   .ready-system .wrapper {
@@ -2741,10 +2738,12 @@ button {
   }
 }
 
-@media (max-width: 550px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 550px) and (min--moz-device-pixel-ratio: 2), (max-width: 550px) and (min-device-pixel-ratio: 2), (max-width: 550px) and (min-resolution: 192dpi), (max-width: 550px) and (min-resolution: 2dppx) {
-  .ready-system {
-    /* on retina, use image that's scaled by 2 */
-    background-image: url("/assets/ready-system-background-mobile-2x.jpg");
+@media (max-width: 550px) and (min-device-pixel-ratio: 2), (max-width: 550px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 550px) and (min--moz-device-pixel-ratio: 2), (max-width: 550px) and (min-resolution: 192dpi), (max-width: 550px) and (min-resolution: 2dppx) {
+  .ready-system.second .wrapper {
+    background-image: url(/assets/money-left-2x.png), url(/assets/money-right-2x.png), url(/assets/ready-system-background-desktop-2x.png);
+  }
+  .ready-system.second .wrapper {
+    background-image: none;
   }
 }
 
@@ -2758,21 +2757,12 @@ button {
   }
 }
 
-@media (max-width: 476px) {
-  .ready-system.second .wrapper {
-    background-image: none;
-  }
-}
-
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header {
     background-image: url(/assets/header-background-mobile-2x.jpg);
   }
   .header .container {
     background-image: url(/assets/money-left-desktop-2x.png), url(/assets/money-right-desktop-2x.png);
-  }
-  .ready-system.second .wrapper {
-    background-image: url(/assets/money-left-2x.png), url(/assets/money-right-2x.png), url(/assets/ready-system-background-desktop-2x.png);
   }
   .master-format {
     background-image: url(/assets/background-2x.jpg);
