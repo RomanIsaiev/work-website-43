@@ -217,14 +217,14 @@ button {
   padding-bottom: -moz-calc(0px + 100 * (100vw - 375px) / 1545);
   padding-bottom: calc(0px + 100 * (100vw - 375px) / 1545);
   background: #090909;
-  background-image: url(/assets/header-background-mobile-1x.jpg);
+  background-image: url(/work-website-43/assets/header-background-mobile-1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
 .header .container {
   padding: 0;
-  background-image: url(/assets/money-left-desktop-1x.png), url(/assets/money-right-desktop-1x.png);
+  background-image: url(/work-website-43/assets/money-left-desktop-1x.png), url(/work-website-43/assets/money-right-desktop-1x.png);
   background-repeat: no-repeat;
   background-position: left 0 top -webkit-calc(236px + 94 * (100vw - 375px) / 1545), right 0 top -webkit-calc(225px + 305 * (100vw - 375px) / 1545);
   background-position: left 0 top -moz-calc(236px + 94 * (100vw - 375px) / 1545), right 0 top -moz-calc(225px + 305 * (100vw - 375px) / 1545);
@@ -541,7 +541,7 @@ button {
   max-width: calc(550px + 832 * (100vw - 375px) / 1545);
   margin-left: auto;
   margin-right: auto;
-  background-image: url(/assets/ready-system-background-desktop-1x.png);
+  background-image: url(/work-website-43/assets/ready-system-background-desktop-1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -718,7 +718,7 @@ button {
   padding-bottom: 0;
 }
 .ready-system.second .wrapper {
-  background-image: url(/assets/money-left-1x.png), url(/assets/money-right-1x.png), url(/assets/ready-system-background-desktop-1x.png);
+  background-image: url(/work-website-43/assets/money-left-1x.png), url(/work-website-43/assets/money-right-1x.png), url(/work-website-43/assets/ready-system-background-desktop-1x.png);
   background-repeat: no-repeat;
   background-position: left 0 top 0, right 0 bottom -webkit-calc(80px + 70 * (100vw - 375px) / 1545), center;
   background-position: left 0 top 0, right 0 bottom -moz-calc(80px + 70 * (100vw - 375px) / 1545), center;
@@ -734,7 +734,7 @@ button {
   padding-bottom: -webkit-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-bottom: -moz-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-bottom: calc(60px + 90 * (100vw - 375px) / 1545);
-  background-image: url(/assets/background.svg);
+  background-image: url(/work-website-43/assets/background.svg);
   background-position: center;
 }
 .what-teach .title {
@@ -934,7 +934,7 @@ button {
   padding-bottom: -moz-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-bottom: calc(60px + 90 * (100vw - 375px) / 1545);
   background: #090909;
-  background-image: url(/assets/background-desktop-1x.jpg);
+  background-image: url(/work-website-43/assets/background-desktop-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1174,7 +1174,7 @@ button {
   padding-bottom: -webkit-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-bottom: -moz-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-bottom: calc(60px + 90 * (100vw - 375px) / 1545);
-  background-image: url(/assets/money-left-1x.png), url(/assets/background.svg);
+  background-image: url(/work-website-43/assets/money-left-1x.png), url(/work-website-43/assets/background.svg);
   background-position: left 0 bottom 55%, center;
   background-size: -webkit-calc(108px + 333 * (100vw - 375px) / 1545), 100%;
   background-size: -moz-calc(108px + 333 * (100vw - 375px) / 1545), 100%;
@@ -1539,13 +1539,13 @@ button {
   padding-top: -webkit-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-top: -moz-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-top: calc(60px + 90 * (100vw - 375px) / 1545);
-  background-image: url(/assets/background-1x.jpg);
+  background-image: url(/work-website-43/assets/background-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .master-format .container {
-  background-image: url(/assets/money-right-1x.png);
+  background-image: url(/work-website-43/assets/money-right-1x.png);
   background-repeat: no-repeat;
   background-position: right 0 bottom 60px;
   background-size: -webkit-calc(163px + 462 * (100vw - 375px) / 1545);
@@ -1873,7 +1873,7 @@ button {
   padding-bottom: -webkit-calc(50px + 50 * (100vw - 375px) / 1545);
   padding-bottom: -moz-calc(50px + 50 * (100vw - 375px) / 1545);
   padding-bottom: calc(50px + 50 * (100vw - 375px) / 1545);
-  background-image: url(/assets/money-left-1x.png);
+  background-image: url(/work-website-43/assets/money-left-1x.png);
   background-position: left 0 top 15%;
   background-size: -webkit-calc(108px + 333 * (100vw - 375px) / 1545);
   background-size: -moz-calc(108px + 333 * (100vw - 375px) / 1545);
@@ -2140,7 +2140,7 @@ button {
   padding-bottom: -webkit-calc(40px + 37 * (100vw - 375px) / 1545);
   padding-bottom: -moz-calc(40px + 37 * (100vw - 375px) / 1545);
   padding-bottom: calc(40px + 37 * (100vw - 375px) / 1545);
-  background-image: url(/assets/author-background-desktop-1x.jpg);
+  background-image: url(/work-website-43/assets/author-background-desktop-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 110%;
@@ -2556,13 +2556,13 @@ button {
 @media (min-width: 476px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 476px) and (min--moz-device-pixel-ratio: 2), (min-width: 476px) and (min-device-pixel-ratio: 2), (min-width: 476px) and (min-resolution: 192dpi), (min-width: 476px) and (min-resolution: 2dppx) {
   .difference {
     /* on retina, use image that's scaled by 2 */
-    background-image: url("/assets/background-desktop-2x.jpg");
+    background-image: url("/work-website-43/assets/background-desktop-2x.jpg");
   }
 }
 
 @media (min-width: 520px) {
   .header {
-    background-image: url(/assets/header-background-tablet-1x.jpg);
+    background-image: url(/work-website-43/assets/header-background-tablet-1x.jpg);
     background-position: unset;
     background-size: 110%;
   }
@@ -2591,14 +2591,14 @@ button {
 
 @media (min-width: 520px) and (min-device-pixel-ratio: 2), (min-width: 520px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 520px) and (min--moz-device-pixel-ratio: 2), (min-width: 520px) and (min-resolution: 192dpi), (min-width: 520px) and (min-resolution: 2dppx) {
   .header {
-    background-image: url(/assets/header-background-tablet-2x.jpg);
+    background-image: url(/work-website-43/assets/header-background-tablet-2x.jpg);
   }
 }
 
 @media (min-width: 549px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 549px) and (min--moz-device-pixel-ratio: 2), (min-width: 549px) and (min-device-pixel-ratio: 2), (min-width: 549px) and (min-resolution: 192dpi), (min-width: 549px) and (min-resolution: 2dppx) {
   .ready-system .wrapper {
     /* on retina, use image that's scaled by 2 */
-    background-image: url("/assets/ready-system-background-desktop-2x.png");
+    background-image: url("/work-website-43/assets/ready-system-background-desktop-2x.png");
   }
 }
 
@@ -2641,7 +2641,7 @@ button {
 
 @media (min-width: 768px) {
   .header {
-    background-image: url(/assets/header-background-tablet-1x.jpg);
+    background-image: url(/work-website-43/assets/header-background-tablet-1x.jpg);
     background-position: unset;
     background-size: 100%;
   }
@@ -2649,13 +2649,13 @@ button {
 
 @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min--moz-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .header {
-    background-image: url(/assets/header-background-tablet-2x.jpg);
+    background-image: url(/work-website-43/assets/header-background-tablet-2x.jpg);
   }
 }
 
 @media (min-width: 920px) {
   .header {
-    background-image: url(/assets/header-background-desktop-1x.jpg);
+    background-image: url(/work-website-43/assets/header-background-desktop-1x.jpg);
     background-position: unset;
     background-size: 110%;
   }
@@ -2663,7 +2663,7 @@ button {
 
 @media (min-width: 920px) and (min-device-pixel-ratio: 2), (min-width: 920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 920px) and (min--moz-device-pixel-ratio: 2), (min-width: 920px) and (min-resolution: 192dpi), (min-width: 920px) and (min-resolution: 2dppx) {
   .header {
-    background-image: url(/assets/header-background-desktop-2x.jpg);
+    background-image: url(/work-website-43/assets/header-background-desktop-2x.jpg);
   }
 }
 
@@ -2699,7 +2699,7 @@ button {
 
 @media (max-width: 600px) {
   .author-image-container {
-    background-image: url(/assets/author-background-mobile-1x.jpg);
+    background-image: url(/work-website-43/assets/author-background-mobile-1x.jpg);
     background-size: cover;
   }
   .author-title-container {
@@ -2724,7 +2724,7 @@ button {
 
 @media (max-width: 550px) {
   .ready-system {
-    background-image: url(/assets/ready-system-background-mobile-1x.jpg);
+    background-image: url(/work-website-43/assets/ready-system-background-mobile-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -2744,7 +2744,7 @@ button {
 @media (max-width: 550px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 550px) and (min--moz-device-pixel-ratio: 2), (max-width: 550px) and (min-device-pixel-ratio: 2), (max-width: 550px) and (min-resolution: 192dpi), (max-width: 550px) and (min-resolution: 2dppx) {
   .ready-system {
     /* on retina, use image that's scaled by 2 */
-    background-image: url("/assets/ready-system-background-mobile-2x.jpg");
+    background-image: url("/work-website-43/assets/ready-system-background-mobile-2x.jpg");
   }
 }
 
@@ -2766,15 +2766,15 @@ button {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header .container {
-    background-image: url(/assets/money-left-desktop-2x.png), url(/assets/money-right-desktop-2x.png);
+    background-image: url(/work-website-43/assets/money-left-desktop-2x.png), url(/work-website-43/assets/money-right-desktop-2x.png);
   }
   .ready-system.second .wrapper {
-    background-image: url(/assets/money-left-2x.png), url(/assets/money-right-2x.png), url(/assets/ready-system-background-desktop-2x.png);
+    background-image: url(/work-website-43/assets/money-left-2x.png), url(/work-website-43/assets/money-right-2x.png), url(/work-website-43/assets/ready-system-background-desktop-2x.png);
   }
   .master-format {
-    background-image: url(/assets/background-2x.jpg);
+    background-image: url(/work-website-43/assets/background-2x.jpg);
   }
   .author-image-container {
-    background-image: url(/assets/author-background-desktop-2x.jpg);
+    background-image: url(/work-website-43/assets/author-background-desktop-2x.jpg);
   }
 }
