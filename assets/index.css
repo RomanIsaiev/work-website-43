@@ -208,6 +208,7 @@ p {
 button {
   cursor: pointer;
 }
+
 .header {
   padding-top: -webkit-calc(0px + 60 * (100vw - 375px) / 1545);
   padding-top: -moz-calc(0px + 60 * (100vw - 375px) / 1545);
@@ -216,19 +217,26 @@ button {
   padding-bottom: -moz-calc(0px + 100 * (100vw - 375px) / 1545);
   padding-bottom: calc(0px + 100 * (100vw - 375px) / 1545);
   background: #090909;
-  background-image: url(/work-website-43/assets/header-background-desktop-1x.jpg);
+  background-image: url(/work-website-43/assets/header-background-mobile-1x.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: top;
 }
 .header .container {
+  padding: 0;
   background-image: url(/work-website-43/assets/money-left-desktop-1x.png), url(/work-website-43/assets/money-right-desktop-1x.png);
   background-repeat: no-repeat;
-  background-position: left 0 top -webkit-calc(336px + 194 * (100vw - 375px) / 1545), right 0 top -webkit-calc(225px + 305 * (100vw - 375px) / 1545);
-  background-position: left 0 top -moz-calc(336px + 194 * (100vw - 375px) / 1545), right 0 top -moz-calc(225px + 305 * (100vw - 375px) / 1545);
-  background-position: left 0 top calc(336px + 194 * (100vw - 375px) / 1545), right 0 top calc(225px + 305 * (100vw - 375px) / 1545);
+  background-position: left 0 top -webkit-calc(236px + 94 * (100vw - 375px) / 1545), right 0 top -webkit-calc(225px + 305 * (100vw - 375px) / 1545);
+  background-position: left 0 top -moz-calc(236px + 94 * (100vw - 375px) / 1545), right 0 top -moz-calc(225px + 305 * (100vw - 375px) / 1545);
+  background-position: left 0 top calc(236px + 94 * (100vw - 375px) / 1545), right 0 top calc(225px + 305 * (100vw - 375px) / 1545);
   background-size: -webkit-calc(95px + 123 * (100vw - 375px) / 1545), -webkit-calc(95px + 123 * (100vw - 375px) / 1545);
   background-size: -moz-calc(95px + 123 * (100vw - 375px) / 1545), -moz-calc(95px + 123 * (100vw - 375px) / 1545);
   background-size: calc(95px + 123 * (100vw - 375px) / 1545), calc(95px + 123 * (100vw - 375px) / 1545);
+}
+.header .header-title-contianer {
+  padding-left: -webkit-calc(13px + 43 * (100vw - 375px) / 1545);
+  padding-left: -moz-calc(13px + 43 * (100vw - 375px) / 1545);
+  padding-left: calc(13px + 43 * (100vw - 375px) / 1545);
 }
 .header .title {
   color: #fff;
@@ -267,9 +275,9 @@ button {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: -webkit-calc(10px + 10 * (100vw - 375px) / 1545);
-  margin-bottom: -moz-calc(10px + 10 * (100vw - 375px) / 1545);
-  margin-bottom: calc(10px + 10 * (100vw - 375px) / 1545);
+  margin-bottom: -webkit-calc(0px + 20 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(0px + 20 * (100vw - 375px) / 1545);
+  margin-bottom: calc(0px + 20 * (100vw - 375px) / 1545);
 }
 
 .master-wrapper-mobile {
@@ -282,21 +290,24 @@ button {
 
 .master-wrapper-desktop {
   display: none;
+  padding-left: -webkit-calc(13px + 43 * (100vw - 375px) / 1545);
+  padding-left: -moz-calc(13px + 43 * (100vw - 375px) / 1545);
+  padding-left: calc(13px + 43 * (100vw - 375px) / 1545);
+  margin-bottom: -webkit-calc(30px + 40 * (100vw - 375px) / 1545);
+  margin-bottom: -moz-calc(30px + 40 * (100vw - 375px) / 1545);
+  margin-bottom: calc(30px + 40 * (100vw - 375px) / 1545);
+}
+
+.master-text {
+  max-width: -webkit-calc(255px + 135 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(255px + 135 * (100vw - 375px) / 1545);
+  max-width: calc(255px + 135 * (100vw - 375px) / 1545);
   padding: -webkit-calc(10px + 5 * (100vw - 375px) / 1545) -webkit-calc(10px + 15 * (100vw - 375px) / 1545);
   padding: -moz-calc(10px + 5 * (100vw - 375px) / 1545) -moz-calc(10px + 15 * (100vw - 375px) / 1545);
   padding: calc(10px + 5 * (100vw - 375px) / 1545) calc(10px + 15 * (100vw - 375px) / 1545);
   border-radius: 6px;
   background: rgba(0, 0, 0, 0.15);
   width: 100%;
-  margin-bottom: -webkit-calc(30px + 40 * (100vw - 375px) / 1545);
-  margin-bottom: -moz-calc(30px + 40 * (100vw - 375px) / 1545);
-  margin-bottom: calc(30px + 40 * (100vw - 375px) / 1545);
-  max-width: -webkit-calc(255px + 135 * (100vw - 375px) / 1545);
-  max-width: -moz-calc(255px + 135 * (100vw - 375px) / 1545);
-  max-width: calc(255px + 135 * (100vw - 375px) / 1545);
-}
-
-.master-text {
   color: #fff;
   font-family: "Futura PT";
   font-size: -webkit-calc(14px + 6 * (100vw - 375px) / 1545);
@@ -326,12 +337,12 @@ button {
   -webkit-align-items: flex-end;
      -moz-box-align: end;
           align-items: flex-end;
+  padding-left: -webkit-calc(13px + 43 * (100vw - 375px) / 1545);
+  padding-left: -moz-calc(13px + 43 * (100vw - 375px) / 1545);
+  padding-left: calc(13px + 43 * (100vw - 375px) / 1545);
   gap: -webkit-calc(4px + 10 * (100vw - 375px) / 1545);
   gap: -moz-calc(4px + 10 * (100vw - 375px) / 1545);
   gap: calc(4px + 10 * (100vw - 375px) / 1545);
-  margin-bottom: -webkit-calc(245px + -125 * (100vw - 375px) / 1545);
-  margin-bottom: -moz-calc(245px + -125 * (100vw - 375px) / 1545);
-  margin-bottom: calc(245px + -125 * (100vw - 375px) / 1545);
 }
 .desc-wrapper .text {
   color: #fff;
@@ -374,6 +385,34 @@ button {
   color: rgba(198, 0, 0, 0.5);
 }
 
+.benefits-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  padding: -webkit-calc(13px + 43 * (100vw - 375px) / 1545);
+  padding: -moz-calc(13px + 43 * (100vw - 375px) / 1545);
+  padding: calc(13px + 43 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(455px + 695 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(455px + 695 * (100vw - 375px) / 1545);
+  max-width: calc(455px + 695 * (100vw - 375px) / 1545);
+  width: 100%;
+}
+
 .benefits-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -381,16 +420,16 @@ button {
   display: flex;
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
   grid-column-gap: -webkit-calc(5px + 5 * (100vw - 375px) / 1545);
   grid-column-gap: -moz-calc(5px + 5 * (100vw - 375px) / 1545);
   grid-column-gap: calc(5px + 5 * (100vw - 375px) / 1545);
   grid-row-gap: -webkit-calc(15px + 5 * (100vw - 375px) / 1545);
   grid-row-gap: -moz-calc(15px + 5 * (100vw - 375px) / 1545);
   grid-row-gap: calc(15px + 5 * (100vw - 375px) / 1545);
-  max-width: -webkit-calc(320px + 830 * (100vw - 375px) / 1545);
-  max-width: -moz-calc(320px + 830 * (100vw - 375px) / 1545);
-  max-width: calc(320px + 830 * (100vw - 375px) / 1545);
-  width: 100%;
   margin-bottom: -webkit-calc(10px + 30 * (100vw - 375px) / 1545);
   margin-bottom: -moz-calc(10px + 30 * (100vw - 375px) / 1545);
   margin-bottom: calc(10px + 30 * (100vw - 375px) / 1545);
@@ -416,7 +455,6 @@ button {
   font-weight: 500;
   line-height: 100%; /* 22px */
   letter-spacing: -0.44px;
-  width: 100%;
   border-radius: 10px;
   border: 1.303px solid #ffd676;
   background: rgba(0, 0, 0, 0.2);
@@ -427,9 +465,9 @@ button {
   font-size: -webkit-calc(15px + 7 * (100vw - 375px) / 1545);
   font-size: -moz-calc(15px + 7 * (100vw - 375px) / 1545);
   font-size: calc(15px + 7 * (100vw - 375px) / 1545);
-  max-width: -webkit-calc(150px + 270 * (100vw - 375px) / 1545);
-  max-width: -moz-calc(150px + 270 * (100vw - 375px) / 1545);
-  max-width: calc(150px + 270 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(170px + 250 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(170px + 250 * (100vw - 375px) / 1545);
+  max-width: calc(170px + 250 * (100vw - 375px) / 1545);
   width: 100%;
   height: -webkit-calc(61px + 39 * (100vw - 375px) / 1545);
   height: -moz-calc(61px + 39 * (100vw - 375px) / 1545);
@@ -498,9 +536,9 @@ button {
   border: 1px solid #ffd676;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 221, 85, 0.5);
           box-shadow: 0px 0px 20px 0px rgba(255, 221, 85, 0.5);
-  max-width: -webkit-calc(475px + 907 * (100vw - 375px) / 1545);
-  max-width: -moz-calc(475px + 907 * (100vw - 375px) / 1545);
-  max-width: calc(475px + 907 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(550px + 832 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(550px + 832 * (100vw - 375px) / 1545);
+  max-width: calc(550px + 832 * (100vw - 375px) / 1545);
   margin-left: auto;
   margin-right: auto;
   background-image: url(/work-website-43/assets/ready-system-background-desktop-1x.png);
@@ -761,6 +799,8 @@ button {
   margin-bottom: -webkit-calc(80px + 70 * (100vw - 375px) / 1545);
   margin-bottom: -moz-calc(80px + 70 * (100vw - 375px) / 1545);
   margin-bottom: calc(80px + 70 * (100vw - 375px) / 1545);
+  margin-left: auto;
+  margin-right: auto;
 }
 .teach-list .teach-item {
   color: #090909;
@@ -1134,10 +1174,12 @@ button {
   padding-bottom: -webkit-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-bottom: -moz-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-bottom: calc(60px + 90 * (100vw - 375px) / 1545);
-  background-image: url(/work-website-43/assets/background.svg);
-  background-position: center;
-  background-size: 100%;
-  background-repeat: repeat;
+  background-image: url(/work-website-43/assets/money-left-1x.png), url(/work-website-43/assets/background.svg);
+  background-position: left 0 bottom 55%, center;
+  background-size: -webkit-calc(108px + 333 * (100vw - 375px) / 1545), 100%;
+  background-size: -moz-calc(108px + 333 * (100vw - 375px) / 1545), 100%;
+  background-size: calc(108px + 333 * (100vw - 375px) / 1545), 100%;
+  background-repeat: no-repeat, repeat;
 }
 .how-works .how-works-container {
   max-width: -webkit-calc(347px + 1033 * (100vw - 375px) / 1545);
@@ -1151,7 +1193,7 @@ button {
   display: block;
   position: absolute;
   left: 50%;
-  top: 12%;
+  top: 0;
   z-index: 1;
   -webkit-transform: translate(-50%);
      -moz-transform: translate(-50%);
@@ -1367,9 +1409,9 @@ button {
 .master-subtitle {
   text-align: center;
   font-family: "Futura PT";
-  font-size: -webkit-calc(44px + 52 * (100vw - 375px) / 1545);
-  font-size: -moz-calc(44px + 52 * (100vw - 375px) / 1545);
-  font-size: calc(44px + 52 * (100vw - 375px) / 1545);
+  font-size: -webkit-calc(42px + 54 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(42px + 54 * (100vw - 375px) / 1545);
+  font-size: calc(42px + 54 * (100vw - 375px) / 1545);
   font-style: normal;
   font-weight: 600;
   line-height: 80%; /* 76.8px */
@@ -1542,7 +1584,7 @@ button {
   font-size: calc(34px + 36 * (100vw - 375px) / 1545);
   font-style: normal;
   font-weight: 600;
-  line-height: 90%; /* 63px */
+  line-height: 120%; /* 63px */
   letter-spacing: -webkit-calc(-1.3px + -1.5 * (100vw - 375px) / 1545);
   letter-spacing: -moz-calc(-1.3px + -1.5 * (100vw - 375px) / 1545);
   letter-spacing: calc(-1.3px + -1.5 * (100vw - 375px) / 1545);
@@ -1831,6 +1873,12 @@ button {
   padding-bottom: -webkit-calc(50px + 50 * (100vw - 375px) / 1545);
   padding-bottom: -moz-calc(50px + 50 * (100vw - 375px) / 1545);
   padding-bottom: calc(50px + 50 * (100vw - 375px) / 1545);
+  background-image: url(/work-website-43/assets/money-left-1x.png);
+  background-position: left 0 top 15%;
+  background-size: -webkit-calc(108px + 333 * (100vw - 375px) / 1545);
+  background-size: -moz-calc(108px + 333 * (100vw - 375px) / 1545);
+  background-size: calc(108px + 333 * (100vw - 375px) / 1545);
+  background-repeat: no-repeat;
 }
 
 .program-title {
@@ -1864,6 +1912,7 @@ button {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 
 .question::after {
@@ -2078,30 +2127,34 @@ button {
 }
 
 .author {
+  background: #090909;
+}
+.author .container {
+  padding: 0;
+}
+
+.author-image-container {
   padding-top: -webkit-calc(130px + 130 * (100vw - 375px) / 1545);
   padding-top: -moz-calc(130px + 130 * (100vw - 375px) / 1545);
   padding-top: calc(130px + 130 * (100vw - 375px) / 1545);
-  padding-bottom: -webkit-calc(130px + 70 * (100vw - 375px) / 1545);
-  padding-bottom: -moz-calc(130px + 70 * (100vw - 375px) / 1545);
-  padding-bottom: calc(130px + 70 * (100vw - 375px) / 1545);
-  background: #090909;
-  background-image: url(/work-website-43/assets/background-1x2.jpg);
+  padding-bottom: -webkit-calc(40px + 37 * (100vw - 375px) / 1545);
+  padding-bottom: -moz-calc(40px + 37 * (100vw - 375px) / 1545);
+  padding-bottom: calc(40px + 37 * (100vw - 375px) / 1545);
+  background-image: url(/work-website-43/assets/author-background-desktop-1x.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
-}
-.author .container {
+  background-position: center;
+  background-size: 110%;
   padding-left: -webkit-calc(15px + 55 * (100vw - 375px) / 1545);
   padding-left: -moz-calc(15px + 55 * (100vw - 375px) / 1545);
   padding-left: calc(15px + 55 * (100vw - 375px) / 1545);
+  padding-right: -webkit-calc(0px + 93 * (100vw - 375px) / 1545);
+  padding-right: -moz-calc(0px + 93 * (100vw - 375px) / 1545);
+  padding-right: calc(0px + 93 * (100vw - 375px) / 1545);
 }
-
 .author-title-container {
-  max-width: -webkit-calc(350px + 700 * (100vw - 375px) / 1545);
-  max-width: -moz-calc(350px + 700 * (100vw - 375px) / 1545);
-  max-width: calc(350px + 700 * (100vw - 375px) / 1545);
-  margin-bottom: -webkit-calc(396px + -230 * (100vw - 375px) / 1545);
-  margin-bottom: -moz-calc(396px + -230 * (100vw - 375px) / 1545);
-  margin-bottom: calc(396px + -230 * (100vw - 375px) / 1545);
+  padding-top: -webkit-calc(60px + 276 * (100vw - 375px) / 1545);
+  padding-top: -moz-calc(60px + 276 * (100vw - 375px) / 1545);
+  padding-top: calc(60px + 276 * (100vw - 375px) / 1545);
 }
 .author-title-container .author-title {
   font-family: "Futura PT";
@@ -2122,13 +2175,13 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.author-title-container .author-subttile {
+.author-title-container .author-subtitle {
   display: block;
   color: #fff;
   font-family: "Futura PT";
-  font-size: -webkit-calc(55px + 104 * (100vw - 375px) / 1545);
-  font-size: -moz-calc(55px + 104 * (100vw - 375px) / 1545);
-  font-size: calc(55px + 104 * (100vw - 375px) / 1545);
+  font-size: -webkit-calc(53px + 106 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(53px + 106 * (100vw - 375px) / 1545);
+  font-size: calc(53px + 106 * (100vw - 375px) / 1545);
   font-style: normal;
   font-weight: 300;
   line-height: 70%; /* 190.8px */
@@ -2158,6 +2211,7 @@ button {
   max-width: -webkit-calc(315px + 135 * (100vw - 375px) / 1545);
   max-width: -moz-calc(315px + 135 * (100vw - 375px) / 1545);
   max-width: calc(315px + 135 * (100vw - 375px) / 1545);
+  width: 100%;
   margin-left: auto;
   margin-right: 0;
   border-radius: 7px;
@@ -2189,6 +2243,8 @@ button {
      -moz-box-align: center;
           align-items: center;
   gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: -webkit-calc(30px + 20 * (100vw - 375px) / 1545);
   margin-bottom: -moz-calc(30px + 20 * (100vw - 375px) / 1545);
   margin-bottom: calc(30px + 20 * (100vw - 375px) / 1545);
@@ -2338,14 +2394,14 @@ button {
 }
 .question-title-container .image {
   position: absolute;
-  right: 20px;
+  right: 10%;
   bottom: -10px;
-  width: -webkit-calc(81px + 74 * (100vw - 375px) / 1545);
-  width: -moz-calc(81px + 74 * (100vw - 375px) / 1545);
-  width: calc(81px + 74 * (100vw - 375px) / 1545);
-  height: -webkit-calc(108px + 99 * (100vw - 375px) / 1545);
-  height: -moz-calc(108px + 99 * (100vw - 375px) / 1545);
-  height: calc(108px + 99 * (100vw - 375px) / 1545);
+  width: -webkit-calc(63px + 92 * (100vw - 375px) / 1545);
+  width: -moz-calc(63px + 92 * (100vw - 375px) / 1545);
+  width: calc(63px + 92 * (100vw - 375px) / 1545);
+  height: -webkit-calc(84px + 123 * (100vw - 375px) / 1545);
+  height: -moz-calc(84px + 123 * (100vw - 375px) / 1545);
+  height: calc(84px + 123 * (100vw - 375px) / 1545);
 }
 
 /* faq-02 */
@@ -2492,6 +2548,61 @@ button {
 }
 
 @media (min-width: 475px) {
+  .header {
+    background-size: 101%;
+  }
+}
+
+@media (min-width: 476px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 476px) and (min--moz-device-pixel-ratio: 2), (min-width: 476px) and (min-device-pixel-ratio: 2), (min-width: 476px) and (min-resolution: 192dpi), (min-width: 476px) and (min-resolution: 2dppx) {
+  .difference {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("/work-website-43/assets/background-desktop-2x.jpg");
+  }
+}
+
+@media (min-width: 520px) {
+  .header {
+    background-image: url(/work-website-43/assets/header-background-tablet-1x.jpg);
+    background-position: unset;
+    background-size: 110%;
+  }
+  .desc-wrapper {
+    margin-bottom: -webkit-calc(30px + 90 * (100vw - 375px) / 1545);
+    margin-bottom: -moz-calc(30px + 90 * (100vw - 375px) / 1545);
+    margin-bottom: calc(30px + 90 * (100vw - 375px) / 1545);
+  }
+  .benefits-container {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+       -moz-box-align: start;
+            align-items: flex-start;
+  }
+  .benefits-list {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 520px) and (min-device-pixel-ratio: 2), (min-width: 520px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 520px) and (min--moz-device-pixel-ratio: 2), (min-width: 520px) and (min-resolution: 192dpi), (min-width: 520px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: url(/work-website-43/assets/header-background-tablet-2x.jpg);
+  }
+}
+
+@media (min-width: 549px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 549px) and (min--moz-device-pixel-ratio: 2), (min-width: 549px) and (min-device-pixel-ratio: 2), (min-width: 549px) and (min-resolution: 192dpi), (min-width: 549px) and (min-resolution: 2dppx) {
+  .ready-system .wrapper {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("/work-website-43/assets/ready-system-background-desktop-2x.png");
+  }
+}
+
+@media (min-width: 550px) {
   .master-wrapper-mobile {
     display: none;
   }
@@ -2500,60 +2611,118 @@ button {
   }
 }
 
-@media (min-width: 476px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 476px) and (min--moz-device-pixel-ratio: 2), (min-width: 476px) and (min-device-pixel-ratio: 2), (min-width: 476px) and (min-resolution: 192dpi), (min-width: 476px) and (min-resolution: 2dppx) {
+@media (min-width: 563px) {
+  .benefits-list .item {
+    max-width: -webkit-calc(170px + 250 * (100vw - 375px) / 1545);
+    max-width: -moz-calc(170px + 250 * (100vw - 375px) / 1545);
+    max-width: calc(170px + 250 * (100vw - 375px) / 1545);
+  }
+}
+
+@media (min-width: 600px) {
+  .how-works .how-works-image {
+    top: 13%;
+  }
+}
+
+@media (min-width: 601px) {
+  .author-title-container .author-subtitle {
+    margin-bottom: -webkit-calc(30px + 230 * (100vw - 375px) / 1545);
+    margin-bottom: -moz-calc(30px + 230 * (100vw - 375px) / 1545);
+    margin-bottom: calc(30px + 230 * (100vw - 375px) / 1545);
+  }
+}
+
+@media (min-width: 650px) {
+  .teach-list {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
   .header {
-    /* on retina, use image that's scaled by 2 */
-    background-image: url("/work-website-43/assets/header-background-desktop-2x.jpg");
+    background-image: url(/work-website-43/assets/header-background-tablet-1x.jpg);
+    background-position: unset;
+    background-size: 100%;
   }
-  .ready-system .wrapper {
-    /* on retina, use image that's scaled by 2 */
-    background-image: url("/work-website-43/assets/ready-system-background-desktop-2x.png");
+}
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min--moz-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: url(/work-website-43/assets/header-background-tablet-2x.jpg);
   }
-  .difference {
-    /* on retina, use image that's scaled by 2 */
-    background-image: url("/work-website-43/assets/background-desktop-2x.jpg");
+}
+
+@media (min-width: 920px) {
+  .header {
+    background-image: url(/work-website-43/assets/header-background-desktop-1x.jpg);
+    background-position: unset;
+    background-size: 110%;
+  }
+}
+
+@media (min-width: 920px) and (min-device-pixel-ratio: 2), (min-width: 920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 920px) and (min--moz-device-pixel-ratio: 2), (min-width: 920px) and (min-resolution: 192dpi), (min-width: 920px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: url(/work-website-43/assets/header-background-desktop-2x.jpg);
+  }
+}
+
+@media (min-width: 1075px) {
+  .teach-list {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1175px) {
+  .teach-list {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .achievement-container .achievement-list {
+    max-width: 1400px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .header {
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .author-image-container {
+    background-size: 100%;
   }
 }
 
 @media (max-width: 600px) {
+  .author-image-container {
+    background-image: url(/work-website-43/assets/author-background-mobile-1x.jpg);
+    background-size: cover;
+  }
   .author-title-container {
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+  .author-title-container .author-subtitle {
+    margin-bottom: 400px;
   }
   .author-name {
     margin-right: auto;
   }
 }
 
-@media (max-width: 500px) {
-  .author {
-    background-image: url(/work-website-43/assets/background-mobile-1x.jpg);
+@media (min-device-pixel-ratio: 2) and (max-width: 600px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 600px), (min--moz-device-pixel-ratio: 2) and (max-width: 600px), (min-resolution: 192dpi) and (max-width: 600px), (min-resolution: 2dppx) and (max-width: 600px) {
+  .author-image-container {
+    background-image: url(/src/img/author/author-background-mobile-2x.jpg);
+    background-size: cover;
   }
 }
 
-@media (max-width: 476px) {
-  .ready-system.second .wrapper {
-    background-image: none;
-  }
-}
-
-@media (max-width: 475px) {
-  .container {
-    max-width: 428px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .header {
-    background-image: url(/work-website-43/assets/header-background-mobile-1x.jpg);
-  }
-  .benefits-list {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .header-button {
-    margin-left: auto;
-    margin-right: auto;
-  }
+@media (max-width: 550px) {
   .ready-system {
     background-image: url(/work-website-43/assets/ready-system-background-mobile-1x.jpg);
     background-repeat: no-repeat;
@@ -2572,14 +2741,26 @@ button {
   }
 }
 
-@media (max-width: 475px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 475px) and (min--moz-device-pixel-ratio: 2), (max-width: 475px) and (min-device-pixel-ratio: 2), (max-width: 475px) and (min-resolution: 192dpi), (max-width: 475px) and (min-resolution: 2dppx) {
-  .header {
-    /* on retina, use image that's scaled by 2 */
-    background-image: url("/work-website-43/assets/header-background-mobile-2x.jpg");
-  }
+@media (max-width: 550px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 550px) and (min--moz-device-pixel-ratio: 2), (max-width: 550px) and (min-device-pixel-ratio: 2), (max-width: 550px) and (min-resolution: 192dpi), (max-width: 550px) and (min-resolution: 2dppx) {
   .ready-system {
     /* on retina, use image that's scaled by 2 */
     background-image: url("/work-website-43/assets/ready-system-background-mobile-2x.jpg");
+  }
+}
+
+@media (max-width: 519px) {
+  .desc-wrapper {
+    margin-bottom: 245px;
+  }
+  .benefits-list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 476px) {
+  .ready-system.second .wrapper {
+    background-image: none;
   }
 }
 
@@ -2592,5 +2773,8 @@ button {
   }
   .master-format {
     background-image: url(/work-website-43/assets/background-2x.jpg);
+  }
+  .author-image-container {
+    background-image: url(/work-website-43/assets/author-background-desktop-2x.jpg);
   }
 }
