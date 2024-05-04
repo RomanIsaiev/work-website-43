@@ -2590,7 +2590,7 @@ button {
 }
 
 @media (min-width: 520px) and (min-device-pixel-ratio: 2), (min-width: 520px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 520px) and (min--moz-device-pixel-ratio: 2), (min-width: 520px) and (min-resolution: 192dpi), (min-width: 520px) and (min-resolution: 2dppx) {
-  .header {
+  .header .header {
     background-image: url(/assets/header-background-tablet-2x.jpg);
   }
 }
@@ -2646,7 +2646,7 @@ button {
 }
 
 @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min--moz-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
-  .header {
+  .header .header {
     background-image: url(/assets/header-background-tablet-2x.jpg);
   }
 }
@@ -2660,7 +2660,7 @@ button {
 }
 
 @media (min-width: 920px) and (min-device-pixel-ratio: 2), (min-width: 920px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 920px) and (min--moz-device-pixel-ratio: 2), (min-width: 920px) and (min-resolution: 192dpi), (min-width: 920px) and (min-resolution: 2dppx) {
-  .header {
+  .header .header {
     background-image: url(/assets/header-background-desktop-2x.jpg);
   }
 }
@@ -2758,7 +2758,7 @@ button {
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .header {
+  .header .header {
     background-image: url(/assets/header-background-mobile-2x.jpg);
   }
   .header .container {
