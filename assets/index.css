@@ -2765,6 +2765,9 @@ button {
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header {
+    background-image: url(/assets/header-background-mobile-2x.jpg);
+  }
   .header .container {
     background-image: url(/assets/money-left-desktop-2x.png), url(/assets/money-right-desktop-2x.png);
   }
