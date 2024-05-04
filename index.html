@@ -20,8 +20,10 @@
             <span>по запускам онлайн курсів для б’юті</span>
           </p>
         </div>
-        <h1 class="title">Beauty продажі</h1>
-        <p class="subtitle">на мільйон</p>
+        <div class="header-title-contianer">
+          <h1 class="title">Beauty продажі</h1>
+          <p class="subtitle">на мільйон</p>
+        </div>
         <div class="desc-wrapper">
           <p class="text">
             Почни упаковувати свої знання в онлайн курс та вийди на дохід
@@ -31,85 +33,87 @@
             <span>на місяць</span>
           </p>
         </div>
-        <ul class="benefits-list list">
-          <li class="item">
-            <picture
-              ><source
-                srcset="
-                  ./src/img/header/benefits-list/fire-desktop-1x.png 1x,
-                  ./src/img/header/benefits-list/fire-desktop-2x.png 2x
-                "
-                width="45"
-                height="45"
-                media="(min-width: 320px)" />
-              <img
-                class="image"
-                src="./src/img/header/benefits-list/fire-desktop-1x.png"
-                alt="emoji"
-                width="45"
-                height="45"
-            /></picture>
-            Без шаблонних прогрівів
-          </li>
-          <li class="item">
-            <picture
-              ><source
-                srcset="
-                  ./src/img/header/benefits-list/heath-desktop-1x.png 1x,
-                  ./src/img/header/benefits-list/heath-desktop-2x.png 2x
-                "
-                width="45"
-                height="45"
-                media="(min-width: 320px)" />
-              <img
-                class="image"
-                src="./src/img/header/benefits-list/heath-desktop-1x.png"
-                alt="emoji"
-                width="45"
-                height="45"
-            /></picture>
-            Без щоденного ведення сторіс
-          </li>
-          <li class="item">
-            <picture
-              ><source
-                srcset="
-                  ./src/img/header/benefits-list/hand-desktop-1x.png 1x,
-                  ./src/img/header/benefits-list/hand-desktop-2x.png 2x
-                "
-                width="45"
-                height="45"
-                media="(min-width: 320px)" />
-              <img
-                class="image"
-                src="./src/img/header/benefits-list/hand-desktop-1x.png"
-                alt="emoji"
-                width="45"
-                height="45"
-            /></picture>
-            Без команди
-          </li>
-          <li class="item">
-            <picture
-              ><source
-                srcset="
-                  ./src/img/header/benefits-list/earth-desktop-1x.png 1x,
-                  ./src/img/header/benefits-list/earth-desktop-2x.png 2x
-                "
-                width="45"
-                height="45"
-                media="(min-width: 320px)" />
-              <img
-                class="image"
-                src="./src/img/header/benefits-list/earth-desktop-1x.png"
-                alt="emoji"
-                width="45"
-                height="45"
-            /></picture>
-            Без прив’язки до блогу та локації 24/7
-          </li>
-        </ul>
-        <a class="header-button link" href="">пройти діагностику</a>
+        <div class="benefits-container">
+          <ul class="benefits-list list">
+            <li class="item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/header/benefits-list/fire-desktop-1x.png 1x,
+                    ./src/img/header/benefits-list/fire-desktop-2x.png 2x
+                  "
+                  width="45"
+                  height="45"
+                  media="(min-width: 320px)" />
+                <img
+                  class="image"
+                  src="./src/img/header/benefits-list/fire-desktop-1x.png"
+                  alt="emoji"
+                  width="45"
+                  height="45"
+              /></picture>
+              Без шаблонних прогрівів
+            </li>
+            <li class="item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/header/benefits-list/heath-desktop-1x.png 1x,
+                    ./src/img/header/benefits-list/heath-desktop-2x.png 2x
+                  "
+                  width="45"
+                  height="45"
+                  media="(min-width: 320px)" />
+                <img
+                  class="image"
+                  src="./src/img/header/benefits-list/heath-desktop-1x.png"
+                  alt="emoji"
+                  width="45"
+                  height="45"
+              /></picture>
+              Без щоденного ведення сторіс
+            </li>
+            <li class="item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/header/benefits-list/hand-desktop-1x.png 1x,
+                    ./src/img/header/benefits-list/hand-desktop-2x.png 2x
+                  "
+                  width="45"
+                  height="45"
+                  media="(min-width: 320px)" />
+                <img
+                  class="image"
+                  src="./src/img/header/benefits-list/hand-desktop-1x.png"
+                  alt="emoji"
+                  width="45"
+                  height="45"
+              /></picture>
+              Без команди
+            </li>
+            <li class="item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/header/benefits-list/earth-desktop-1x.png 1x,
+                    ./src/img/header/benefits-list/earth-desktop-2x.png 2x
+                  "
+                  width="45"
+                  height="45"
+                  media="(min-width: 320px)" />
+                <img
+                  class="image"
+                  src="./src/img/header/benefits-list/earth-desktop-1x.png"
+                  alt="emoji"
+                  width="45"
+                  height="45"
+              /></picture>
+              Без прив’язки до блогу та локації 24/7
+            </li>
+          </ul>
+          <a class="header-button link" href="">пройти діагностику</a>
+        </div>
       </div>
     </header>
     <main>
@@ -359,10 +363,17 @@
             /></picture>
           </div>
           <div class="how-works-container">
-            <img
-              class="how-works-image"
-              src="./src/img/how-works/background-line.svg"
-            />
+            <picture
+              ><source
+                srcset="./src/img/how-works/background-line.svg"
+                media="(min-width: 600px)" />
+              <source
+                srcset="./src/img/how-works/background-line-mobile.svg"
+                media="(min-width: 1px)" />
+              <img
+                class="how-works-image"
+                src="./src/img/how-works/background-line.svg"
+            /></picture>
             <ul class="how-works-list list">
               <li class="list-item">
                 <picture
@@ -1372,11 +1383,13 @@
       </section>
       <section class="author">
         <div class="container">
-          <div class="author-title-container">
-            <h2 class="author-title">Автор</h2>
-            <span class="author-subttile">майстер-групи</span>
+          <div class="author-image-container">
+            <div class="author-title-container">
+              <h2 class="author-title">Автор</h2>
+              <span class="author-subtitle">майстер-групи</span>
+              <h3 class="author-name">Тетяна Мендусь</h3>
+            </div>
           </div>
-          <h3 class="author-name">Тетяна Мендусь</h3>
           <div class="achievement-container">
             <ul class="achievement-list list">
               <li class="item">

@@ -1,26 +1,51 @@
 @use "../utils/mixins" as mx;
 
 .author {
-  @include mx.adaptive("padding-top", 260, 130, 0);
-  @include mx.adaptive("padding-bottom", 200, 130, 0);
   background: #090909;
-  background-image: url(/src/img/author/background-1x.jpg);
-  background-repeat: no-repeat;
-  //   background-position: center;
-  background-size: 100%;
+  .container {
+    padding: 0;
+  }
+}
 
-  @media (max-width: 500px) {
-    background-image: url(/src/img/author/background-mobile-1x.jpg);
+.author-image-container {
+  @include mx.adaptive("padding-top", 260, 130, 0);
+  @include mx.adaptive("padding-bottom", 77, 40, 0);
+
+  background-image: url(/src/img/author/author-background-desktop-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  // background-size: cover;
+  background-size: 110%;
+
+  @include mx.adaptive("padding-left", 70, 15, 0);
+  @include mx.adaptive("padding-right", 93, 0, 0);
+
+  @media (max-width: 600px) {
+    background-image: url(/src/img/author/author-background-mobile-1x.jpg);
+    background-size: cover;
   }
 
-  .container {
-    @include mx.adaptive("padding-left", 70, 15, 0);
+  @media (min-width: 1600px) {
+    background-size: 100%;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .author-image-container {
+    background-image: url(/src/img/author/author-background-desktop-2x.jpg);
+
+    @media (max-width: 600px) {
+      background-image: url(/src/img/author/author-background-mobile-2x.jpg);
+      background-size: cover;
+    }
   }
 }
 
 .author-title-container {
-  @include mx.adaptive("max-width", 1050, 350, 0);
-  @include mx.adaptive("margin-bottom", 166, 396, 0);
+  @include mx.adaptive("padding-top", 336, 60, 0);
+
   .author-title {
     font-family: "Futura PT";
     @include mx.adaptive("font-size", 360, 120, 0);
@@ -41,20 +66,29 @@
     -webkit-text-fill-color: transparent;
   }
   @media (max-width: 600px) {
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .author-subttile {
+  .author-subtitle {
     display: block;
     color: #fff;
     font-family: "Futura PT";
-    @include mx.adaptive("font-size", 159, 55, 0);
+    @include mx.adaptive("font-size", 159, 53, 0);
     font-style: normal;
     font-weight: 300;
     line-height: 70%; /* 190.8px */
     @include mx.adaptive("letter-spacing", -11, -3.85, 0);
     text-transform: uppercase;
+
+    @media (max-width: 600px) {
+      margin-bottom: 400px;
+    }
+
+    @media (min-width: 601px) {
+      @include mx.adaptive("margin-bottom", 260, 30, 0);
+    }
   }
 }
 
@@ -71,6 +105,7 @@
 
   @include mx.adaptive("padding", 30, 20, 0);
   @include mx.adaptive("max-width", 450, 315, 0);
+  width: 100%;
   margin-left: auto;
   margin-right: 0;
 
@@ -96,6 +131,13 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 1400px) {
+      max-width: 1400px;
+    }
 
     @include mx.adaptive("margin-bottom", 50, 30, 0);
 

@@ -5,7 +5,7 @@
   @include mx.adaptive("padding-bottom", 150, 50, 0);
   background: #090909;
 
-  @media (max-width: 475px) {
+  @media (max-width: 550px) {
     background-image: url(/src/img/ready-system/ready-system-background-mobile-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -23,7 +23,7 @@
     border: 1px solid #ffd676;
     box-shadow: 0px 0px 20px 0px rgba(255, 221, 85, 0.5);
 
-    @include mx.adaptive("max-width", 1382, 475, 0);
+    @include mx.adaptive("max-width", 1382, 550, 0);
     margin-left: auto;
     margin-right: auto;
 
@@ -32,13 +32,13 @@
     background-position: center;
     background-size: cover;
 
-    @media (min-width: 476px) {
+    @media (min-width: 549px) {
       @include mx.image-2x(
         "/src/img/ready-system/ready-system-background-desktop-2x.png"
       );
     }
 
-    @media (max-width: 475px) {
+    @media (max-width: 550px) {
       padding-top: 210px;
       border: inherit;
       box-shadow: none;
@@ -56,7 +56,7 @@
     margin-left: auto;
     margin-right: 0;
 
-    @media (max-width: 475px) {
+    @media (max-width: 550px) {
       margin-right: auto;
     }
   }

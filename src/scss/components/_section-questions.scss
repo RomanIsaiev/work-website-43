@@ -47,11 +47,11 @@
 
   .image {
     position: absolute;
-    right: 20px;
+    right: 10%;
     bottom: -10px;
 
-    @include mx.adaptive("width", 155, 81, 0);
-    @include mx.adaptive("height", 207, 108, 0);
+    @include mx.adaptive("width", 155, 63, 0);
+    @include mx.adaptive("height", 207, 84, 0);
   }
 }
 

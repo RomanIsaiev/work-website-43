@@ -40,11 +40,3 @@ p {
 button {
   cursor: pointer;
 }
-
-@media (max-width: 475px) {
-  .container {
-    max-width: 428px;
-    width: 100%;
-    margin: 0 auto;
-  }
-}

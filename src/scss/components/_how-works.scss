@@ -6,10 +6,12 @@
   @include mx.adaptive("padding-top", 150, 60, 0);
   @include mx.adaptive("padding-bottom", 150, 60, 0);
 
-  background-image: url(/src/img/what-teach/background.svg);
-  background-position: center;
-  background-size: 100%;
-  background-repeat: repeat;
+  background-image: url(/src/img/how-works/money-left-1x.png),
+    url(/src/img/what-teach/background.svg);
+  background-position: left 0 bottom 55%, center;
+  background-size: calc(108px + (441 - 108) * ((100vw - 375px) / (1920 - 375))),
+    100%;
+  background-repeat: no-repeat, repeat;
 
   .how-works-container {
     @include mx.adaptive("max-width", 1380, 347, 0);
@@ -23,8 +25,12 @@
     display: block;
     position: absolute;
     left: 50%;
-    top: 12%;
+    top: 0;
     z-index: 1;
+
+    @media (min-width: 600px) {
+      top: 13%;
+    }
 
     transform: translate(-50%);
 
@@ -184,7 +190,7 @@
 .master-subtitle {
   text-align: center;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 96, 44, 0);
+  @include mx.adaptive("font-size", 96, 42, 0);
   font-style: normal;
   font-weight: 600;
   line-height: 80%; /* 76.8px */

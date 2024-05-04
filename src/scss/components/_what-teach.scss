@@ -51,6 +51,21 @@
 
   @include mx.adaptive("margin-bottom", 150, 80, 0);
 
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 650px) {
+    max-width: 500px;
+  }
+
+  @media (min-width: 1075px) {
+    max-width: 700px;
+  }
+
+  @media (min-width: 1175px) {
+    max-width: 1200px;
+  }
+
   .teach-item {
     color: #090909;
     text-align: center;

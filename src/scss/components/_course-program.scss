@@ -4,6 +4,11 @@
   background: #090909;
   @include mx.adaptive("padding-top", 200, 120, 0);
   @include mx.adaptive("padding-bottom", 100, 50, 0);
+
+  background-image: url(/src/img/how-works/money-left-1x.png);
+  background-position: left 0 top 15%;
+  background-size: calc(108px + (441 - 108) * ((100vw - 375px) / (1920 - 375)));
+  background-repeat: no-repeat;
 }
 
 .program-title {
@@ -31,6 +36,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 
 .question::after {
