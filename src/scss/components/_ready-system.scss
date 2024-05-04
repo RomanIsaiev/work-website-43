@@ -11,6 +11,12 @@
     background-size: cover;
   }
 
+  @media (max-width: 550px) and (min-device-pixel-ratio: 2),
+    (max-width: 550px) and (min-resolution: 192dpi),
+    (max-width: 550px) and (min-resolution: 2dppx) {
+    background-image: url(/src/img/ready-system/ready-system-background-mobile-2x.jpg);
+  }
+
   .wrapper {
     padding: calc(25px + (100 - 25) * ((100vw - 375px) / (1920 - 375)))
       calc(3px + (60 - 3) * ((100vw - 375px) / (1920 - 375)));
@@ -32,6 +38,14 @@
       border: inherit;
       box-shadow: none;
       background-image: none;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .wrapper {
+      background-image: url(/src/img/ready-system/ready-system-background-desktop-2x.png);
     }
   }
 

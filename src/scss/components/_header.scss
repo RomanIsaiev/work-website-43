@@ -9,58 +9,41 @@
   background-size: cover;
   background-position: top;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .header {
-      background-image: url(/src/img/header/header-background-mobile-2x.jpg);
-    }
-  }
-
   @media (min-width: 475px) {
     background-size: 101%;
   }
 
   @media (min-width: 520px) {
     background-image: url(/src/img/header/header-background-tablet-1x.jpg);
-    background-position: unset;
     background-size: 110%;
+  }
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .header {
-        background-image: url(/src/img/header/header-background-tablet-2x.jpg);
-      }
-    }
+  @media (min-width: 520px) and (min-device-pixel-ratio: 2),
+    (min-width: 520px) and (min-resolution: 192dpi),
+    (min-width: 520px) and (min-resolution: 2dppx) {
+    background-image: url(/src/img/header/header-background-tablet-2x.jpg);
   }
 
   @media (min-width: 768px) {
     background-image: url(/src/img/header/header-background-tablet-1x.jpg);
-    background-position: unset;
     background-size: 100%;
+  }
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .header {
-        background-image: url(/src/img/header/header-background-tablet-2x.jpg);
-      }
-    }
+  @media (min-width: 768px) and (min-device-pixel-ratio: 2),
+    (min-width: 768px) and (min-resolution: 192dpi),
+    (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: url(/src/img/header/header-background-tablet-2x.jpg);
   }
 
   @media (min-width: 920px) {
     background-image: url(/src/img/header/header-background-desktop-1x.jpg);
-    background-position: unset;
     background-size: 110%;
+  }
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .header {
-        background-image: url(/src/img/header/header-background-desktop-2x.jpg);
-      }
-    }
+  @media (min-width: 920px) and (min-device-pixel-ratio: 2),
+    (min-width: 920px) and (min-resolution: 192dpi),
+    (min-width: 920px) and (min-resolution: 2dppx) {
+    background-image: url(/src/img/header/header-background-desktop-2x.jpg);
   }
 
   @media (min-width: 1500px) {

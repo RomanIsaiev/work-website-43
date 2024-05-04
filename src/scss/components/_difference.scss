@@ -10,10 +10,6 @@
   background-position: center;
   background-size: cover;
 
-  @media (min-width: 476px) {
-    @include mx.image-2x("/src/img/difference/background-desktop-2x.jpg");
-  }
-
   .title {
     color: #fff;
     text-align: center;
@@ -35,6 +31,14 @@
 
   .title span {
     color: #ffd05a;
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .difference {
+    background-image: url(/src/img/difference/background-desktop-2x.jpg);
   }
 }
 

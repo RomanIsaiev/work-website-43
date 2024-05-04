@@ -15,30 +15,18 @@
 
   background-image: url(/src/img/author/author-background-mobile-1x.jpg);
   background-repeat: no-repeat;
-  // background-position: center;
   background-size: 110%;
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .author-image-container {
-      background-image: url(/src/img/author/author-background-mobile-2x.jpg);
-    }
-  }
 
   @media (min-width: 500px) {
     background-image: url(/src/img/author/author-background-desktop-1x.jpg);
-    background-size: cover;
+    background-size: 110%;
     background-position: center;
-    background-size: 120%;
+  }
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .author-image-container {
-        background-image: url(/src/img/author/author-background-desktop-2x.jpg);
-      }
-    }
+  @media (min-width: 500px) and (min-device-pixel-ratio: 2),
+    (min-width: 500px) and (min-resolution: 192dpi),
+    (min-width: 500px) and (min-resolution: 2dppx) {
+    background-image: url(/src/img/author/author-background-desktop-2x.jpg);
   }
 
   @media (min-width: 768px) {
@@ -47,6 +35,14 @@
 
   @media (min-width: 1600px) {
     background-size: 100%;
+  }
+}
+
+@media (max-width: 500px) and (min-device-pixel-ratio: 2),
+  (max-width: 500px) and (min-resolution: 192dpi),
+  (max-width: 500px) and (min-resolution: 2dppx) {
+  .author-image-container {
+    background-image: url(/src/img/author/author-background-mobile-2x.jpg);
   }
 }
 

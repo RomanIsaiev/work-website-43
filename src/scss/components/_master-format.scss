@@ -9,24 +9,14 @@
   background-size: cover;
   background-position: center;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .master-format {
-      background-image: url(/src/img/master-format/background-mobile-2x.jpg);
-    }
-  }
-
   @media (min-width: 500px) {
     background-image: url(/src/img/master-format/background-1x.jpg);
+  }
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      .master-format {
-        background-image: url(/src/img/master-format/background-mobile-2x.jpg);
-      }
-    }
+  @media (min-width: 500px) and (min-device-pixel-ratio: 2),
+    (min-width: 500px) and (min-resolution: 192dpi),
+    (min-width: 500px) and (min-resolution: 2dppx) {
+    background-image: url(/src/img/master-format/background-2x.jpg);
   }
 
   .container {
