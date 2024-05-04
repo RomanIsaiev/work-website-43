@@ -226,9 +226,9 @@ button {
   padding: 0;
   background-image: url(/assets/money-left-desktop-1x.png), url(/assets/money-right-desktop-1x.png);
   background-repeat: no-repeat;
-  background-position: left 0 top -webkit-calc(236px + 94 * (100vw - 375px) / 1545), right 0 top -webkit-calc(225px + 305 * (100vw - 375px) / 1545);
-  background-position: left 0 top -moz-calc(236px + 94 * (100vw - 375px) / 1545), right 0 top -moz-calc(225px + 305 * (100vw - 375px) / 1545);
-  background-position: left 0 top calc(236px + 94 * (100vw - 375px) / 1545), right 0 top calc(225px + 305 * (100vw - 375px) / 1545);
+  background-position: left 0 top -webkit-calc(300px + 200 * (100vw - 375px) / 1545), right 0 top -webkit-calc(225px + 305 * (100vw - 375px) / 1545);
+  background-position: left 0 top -moz-calc(300px + 200 * (100vw - 375px) / 1545), right 0 top -moz-calc(225px + 305 * (100vw - 375px) / 1545);
+  background-position: left 0 top calc(300px + 200 * (100vw - 375px) / 1545), right 0 top calc(225px + 305 * (100vw - 375px) / 1545);
   background-size: -webkit-calc(95px + 123 * (100vw - 375px) / 1545), -webkit-calc(95px + 123 * (100vw - 375px) / 1545);
   background-size: -moz-calc(95px + 123 * (100vw - 375px) / 1545), -moz-calc(95px + 123 * (100vw - 375px) / 1545);
   background-size: calc(95px + 123 * (100vw - 375px) / 1545), calc(95px + 123 * (100vw - 375px) / 1545);
@@ -1199,9 +1199,6 @@ button {
      -moz-transform: translate(-50%);
       -ms-transform: translate(-50%);
           transform: translate(-50%);
-  width: -webkit-calc(372px + 355 * (100vw - 375px) / 1545);
-  width: -moz-calc(372px + 355 * (100vw - 375px) / 1545);
-  width: calc(372px + 355 * (100vw - 375px) / 1545);
   margin-left: auto;
   margin-right: auto;
 }
@@ -1539,10 +1536,13 @@ button {
   padding-top: -webkit-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-top: -moz-calc(60px + 90 * (100vw - 375px) / 1545);
   padding-top: calc(60px + 90 * (100vw - 375px) / 1545);
-  background-image: url(/assets/background-1x.jpg);
+  padding-bottom: -webkit-calc(120px + 80 * (100vw - 375px) / 1545);
+  padding-bottom: -moz-calc(120px + 80 * (100vw - 375px) / 1545);
+  padding-bottom: calc(120px + 80 * (100vw - 375px) / 1545);
+  background-image: url(/assets/background-mobile-1x.jpg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-position: center;
 }
 .master-format .container {
   background-image: url(/assets/money-right-1x.png);
@@ -1723,6 +1723,7 @@ button {
   margin-bottom: -moz-calc(120px + 80 * (100vw - 375px) / 1545);
   margin-bottom: calc(120px + 80 * (100vw - 375px) / 1545);
 }
+
 .get-title-container {
   max-width: -webkit-calc(350px + 520 * (100vw - 375px) / 1545);
   max-width: -moz-calc(350px + 520 * (100vw - 375px) / 1545);
@@ -1867,18 +1868,9 @@ button {
 
 .course-program {
   background: #090909;
-  padding-top: -webkit-calc(120px + 80 * (100vw - 375px) / 1545);
-  padding-top: -moz-calc(120px + 80 * (100vw - 375px) / 1545);
-  padding-top: calc(120px + 80 * (100vw - 375px) / 1545);
   padding-bottom: -webkit-calc(50px + 50 * (100vw - 375px) / 1545);
   padding-bottom: -moz-calc(50px + 50 * (100vw - 375px) / 1545);
   padding-bottom: calc(50px + 50 * (100vw - 375px) / 1545);
-  background-image: url(/assets/money-left-1x.png);
-  background-position: left 0 top 3%;
-  background-size: -webkit-calc(108px + 333 * (100vw - 375px) / 1545);
-  background-size: -moz-calc(108px + 333 * (100vw - 375px) / 1545);
-  background-size: calc(108px + 333 * (100vw - 375px) / 1545);
-  background-repeat: no-repeat;
 }
 
 .program-title {
@@ -2140,21 +2132,21 @@ button {
   padding-bottom: -webkit-calc(40px + 37 * (100vw - 375px) / 1545);
   padding-bottom: -moz-calc(40px + 37 * (100vw - 375px) / 1545);
   padding-bottom: calc(40px + 37 * (100vw - 375px) / 1545);
-  background-image: url(/assets/author-background-desktop-1x.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 110%;
   padding-left: -webkit-calc(15px + 55 * (100vw - 375px) / 1545);
   padding-left: -moz-calc(15px + 55 * (100vw - 375px) / 1545);
   padding-left: calc(15px + 55 * (100vw - 375px) / 1545);
   padding-right: -webkit-calc(0px + 93 * (100vw - 375px) / 1545);
   padding-right: -moz-calc(0px + 93 * (100vw - 375px) / 1545);
   padding-right: calc(0px + 93 * (100vw - 375px) / 1545);
+  background-image: url(/assets/author-background-mobile-1x.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
 }
+
 .author-title-container {
-  padding-top: -webkit-calc(60px + 276 * (100vw - 375px) / 1545);
-  padding-top: -moz-calc(60px + 276 * (100vw - 375px) / 1545);
-  padding-top: calc(60px + 276 * (100vw - 375px) / 1545);
+  padding-top: -webkit-calc(10px + 326 * (100vw - 375px) / 1545);
+  padding-top: -moz-calc(10px + 326 * (100vw - 375px) / 1545);
+  padding-top: calc(10px + 326 * (100vw - 375px) / 1545);
 }
 .author-title-container .author-title {
   font-family: "Futura PT";
@@ -2560,6 +2552,35 @@ button {
   }
 }
 
+@media (min-width: 500px) {
+  .master-format {
+    background-image: url(/assets/background-1x.jpg);
+  }
+  .author-image-container {
+    background-image: url(/assets/author-background-desktop-1x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-size: 120%;
+  }
+}
+
+@media (min-width: 500px) and (min-device-pixel-ratio: 2), (min-width: 500px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 500px) and (min--moz-device-pixel-ratio: 2), (min-width: 500px) and (min-resolution: 192dpi), (min-width: 500px) and (min-resolution: 2dppx) {
+  .master-format .master-format {
+    background-image: url(/assets/background-mobile-2x.jpg);
+  }
+  .author-image-container .author-image-container {
+    background-image: url(/assets/author-background-desktop-2x.jpg);
+  }
+}
+
+@media (min-width: 501px) {
+  .author-title-container .author-subtitle {
+    margin-bottom: -webkit-calc(50px + 210 * (100vw - 375px) / 1545);
+    margin-bottom: -moz-calc(50px + 210 * (100vw - 375px) / 1545);
+    margin-bottom: calc(50px + 210 * (100vw - 375px) / 1545);
+  }
+}
+
 @media (min-width: 520px) {
   .header {
     background-image: url(/assets/header-background-tablet-1x.jpg);
@@ -2615,14 +2636,9 @@ button {
 @media (min-width: 600px) {
   .how-works .how-works-image {
     top: 13%;
-  }
-}
-
-@media (min-width: 601px) {
-  .author-title-container .author-subtitle {
-    margin-bottom: -webkit-calc(30px + 230 * (100vw - 375px) / 1545);
-    margin-bottom: -moz-calc(30px + 230 * (100vw - 375px) / 1545);
-    margin-bottom: calc(30px + 230 * (100vw - 375px) / 1545);
+    width: -webkit-calc(372px + 355 * (100vw - 375px) / 1545);
+    width: -moz-calc(372px + 355 * (100vw - 375px) / 1545);
+    width: calc(372px + 355 * (100vw - 375px) / 1545);
   }
 }
 
@@ -2642,6 +2658,17 @@ button {
     background-size: -webkit-calc(92px + 150 * (100vw - 375px) / 1545), -webkit-calc(163px + 146 * (100vw - 375px) / 1545), 100%;
     background-size: -moz-calc(92px + 150 * (100vw - 375px) / 1545), -moz-calc(163px + 146 * (100vw - 375px) / 1545), 100%;
     background-size: calc(92px + 150 * (100vw - 375px) / 1545), calc(163px + 146 * (100vw - 375px) / 1545), 100%;
+  }
+  .course-program {
+    background-image: url(/assets/money-left-1x.png);
+    background-position: left 0 top 3%;
+    background-size: -webkit-calc(108px + 333 * (100vw - 375px) / 1545);
+    background-size: -moz-calc(108px + 333 * (100vw - 375px) / 1545);
+    background-size: calc(108px + 333 * (100vw - 375px) / 1545);
+    background-repeat: no-repeat;
+  }
+  .author-image-container {
+    background-size: 100%;
   }
 }
 
@@ -2678,6 +2705,9 @@ button {
 }
 
 @media (min-width: 1400px) {
+  .teach-list {
+    max-width: 1400px;
+  }
   .achievement-container .achievement-list {
     max-width: 1400px;
   }
@@ -2695,32 +2725,19 @@ button {
   }
 }
 
-@media (max-width: 600px) {
-  .author-image-container {
-    background-image: url(/assets/author-background-mobile-1x.jpg);
-    background-size: cover;
-  }
-  .author-title-container {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .author-title-container .author-subtitle {
-    margin-bottom: 400px;
-  }
-  .author-name {
-    margin-right: auto;
-  }
-}
-
-@media (min-device-pixel-ratio: 2) and (max-width: 600px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 600px), (min--moz-device-pixel-ratio: 2) and (max-width: 600px), (min-resolution: 192dpi) and (max-width: 600px), (min-resolution: 2dppx) and (max-width: 600px) {
-  .author-image-container {
-    background-image: url(/src/img/author/author-background-mobile-2x.jpg);
-    background-size: cover;
+@media (max-width: 599px) {
+  .how-works .how-works-image {
+    top: 13%;
+    width: -webkit-calc(82px + 45 * (100vw - 375px) / 1545);
+    width: -moz-calc(82px + 45 * (100vw - 375px) / 1545);
+    width: calc(82px + 45 * (100vw - 375px) / 1545);
   }
 }
 
 @media (max-width: 550px) {
+  .master-text {
+    background: none;
+  }
   .ready-system {
     background-image: url(/assets/ready-system-background-mobile-1x.jpg);
     background-repeat: no-repeat;
@@ -2736,6 +2753,9 @@ button {
   .ready-system .box {
     margin-right: auto;
   }
+  .ready-system.second .container {
+    padding: 0;
+  }
 }
 
 @media (max-width: 550px) and (min-device-pixel-ratio: 2), (max-width: 550px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 550px) and (min--moz-device-pixel-ratio: 2), (max-width: 550px) and (min-resolution: 192dpi), (max-width: 550px) and (min-resolution: 2dppx) {
@@ -2743,7 +2763,7 @@ button {
     background-image: url(/assets/money-left-2x.png), url(/assets/money-right-2x.png), url(/assets/ready-system-background-desktop-2x.png);
   }
   .ready-system.second .wrapper {
-    background-image: none;
+    background-image: url(/assets/money-left-2x.png), url(/assets/money-right-2x.png), none;
   }
 }
 
@@ -2757,6 +2777,20 @@ button {
   }
 }
 
+@media (max-width: 500px) {
+  .author-title-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .author-title-container .author-subtitle {
+    margin-bottom: 400px;
+  }
+  .author-name {
+    margin-right: auto;
+  }
+}
+
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header .header {
     background-image: url(/assets/header-background-mobile-2x.jpg);
@@ -2764,10 +2798,10 @@ button {
   .header .container {
     background-image: url(/assets/money-left-desktop-2x.png), url(/assets/money-right-desktop-2x.png);
   }
-  .master-format {
-    background-image: url(/assets/background-2x.jpg);
+  .master-format .master-format {
+    background-image: url(/assets/background-mobile-2x.jpg);
   }
-  .author-image-container {
-    background-image: url(/assets/author-background-desktop-2x.jpg);
+  .author-image-container .author-image-container {
+    background-image: url(/assets/author-background-mobile-2x.jpg);
   }
 }
