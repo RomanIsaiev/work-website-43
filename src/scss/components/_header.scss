@@ -9,6 +9,12 @@
   background-size: cover;
   background-position: top;
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/img/header/header-background-mobile-2x.jpg);
+  }
+
   @media (min-width: 475px) {
     background-size: 101%;
   }
