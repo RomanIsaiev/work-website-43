@@ -1,34 +1,34 @@
 @font-face {
   font-family: "Futura PT";
-  src: url("../fonts/FUTURAPT-LIGHT.ttf") format("truetype");
+  src: url("/assets/FUTURAPT-LIGHT.TTF") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Futura PT";
-  src: url("../fonts/FUTURAPT-BOOK.ttf") format("truetype");
+  src: url("/assets/FUTURAPT-BOOK.TTF") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Futura PT";
-  src: url("../fonts/FUTURAPT-MEDIUM.ttf") format("truetype");
+  src: url("/assets/FUTURAPT-MEDIUM.TTF") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Futura PT";
-  src: url("../fonts/FUTURAPT-BOLD.ttf") format("truetype");
+  src: url("/assets/FUTURAPT-BOLD.TTF") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Futura PT";
-  src: url("../fonts/FUTURAPT-HEAVY.ttf") format("truetype");
+  src: url("/assets/FUTURAPT-HEAVY.TTF") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
