@@ -28,15 +28,20 @@
     top: 0;
     z-index: 1;
 
-    @media (min-width: 600px) {
-      top: 13%;
-    }
-
     transform: translate(-50%);
 
-    @include mx.adaptive("width", 727, 372, 0);
     margin-left: auto;
     margin-right: auto;
+
+    @media (max-width: 599px) {
+      top: 13%;
+      @include mx.adaptive("width", 127, 82, 0);
+    }
+
+    @media (min-width: 600px) {
+      top: 13%;
+      @include mx.adaptive("width", 727, 372, 0);
+    }
   }
 
   .title-container {

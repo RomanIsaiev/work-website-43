@@ -2,11 +2,32 @@
 
 .master-format {
   @include mx.adaptive("padding-top", 150, 60, 0);
+  @include mx.adaptive("padding-bottom", 200, 120, 0);
 
-  background-image: url(/src/img/master-format/background-1x.jpg);
+  background-image: url(/src/img/master-format/background-mobile-1x.jpg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .master-format {
+      background-image: url(/src/img/master-format/background-mobile-2x.jpg);
+    }
+  }
+
+  @media (min-width: 500px) {
+    background-image: url(/src/img/master-format/background-1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .master-format {
+        background-image: url(/src/img/master-format/background-mobile-2x.jpg);
+      }
+    }
+  }
 
   .container {
     background-image: url(/src/img/master-format/money-right-1x.png);
@@ -141,14 +162,6 @@
   margin-right: auto;
 
   @include mx.adaptive("margin-bottom", 200, 120, 0);
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .master-format {
-    background-image: url(/src/img/master-format/background-2x.jpg);
-  }
 }
 
 //  you get container

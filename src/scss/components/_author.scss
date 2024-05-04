@@ -10,19 +10,39 @@
 .author-image-container {
   @include mx.adaptive("padding-top", 260, 130, 0);
   @include mx.adaptive("padding-bottom", 77, 40, 0);
-
-  background-image: url(/src/img/author/author-background-desktop-1x.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  // background-size: cover;
-  background-size: 110%;
-
   @include mx.adaptive("padding-left", 70, 15, 0);
   @include mx.adaptive("padding-right", 93, 0, 0);
 
-  @media (max-width: 600px) {
-    background-image: url(/src/img/author/author-background-mobile-1x.jpg);
+  background-image: url(/src/img/author/author-background-mobile-1x.jpg);
+  background-repeat: no-repeat;
+  // background-position: center;
+  background-size: 110%;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .author-image-container {
+      background-image: url(/src/img/author/author-background-mobile-2x.jpg);
+    }
+  }
+
+  @media (min-width: 500px) {
+    background-image: url(/src/img/author/author-background-desktop-1x.jpg);
     background-size: cover;
+    background-position: center;
+    background-size: 120%;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .author-image-container {
+        background-image: url(/src/img/author/author-background-desktop-2x.jpg);
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    background-size: 100%;
   }
 
   @media (min-width: 1600px) {
@@ -30,21 +50,8 @@
   }
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .author-image-container {
-    background-image: url(/src/img/author/author-background-desktop-2x.jpg);
-
-    @media (max-width: 600px) {
-      background-image: url(/src/img/author/author-background-mobile-2x.jpg);
-      background-size: cover;
-    }
-  }
-}
-
 .author-title-container {
-  @include mx.adaptive("padding-top", 336, 60, 0);
+  @include mx.adaptive("padding-top", 336, 10, 0);
 
   .author-title {
     font-family: "Futura PT";
@@ -65,7 +72,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -82,12 +89,12 @@
     @include mx.adaptive("letter-spacing", -11, -3.85, 0);
     text-transform: uppercase;
 
-    @media (max-width: 600px) {
+    @media (max-width: 500px) {
       margin-bottom: 400px;
     }
 
-    @media (min-width: 601px) {
-      @include mx.adaptive("margin-bottom", 260, 30, 0);
+    @media (min-width: 501px) {
+      @include mx.adaptive("margin-bottom", 260, 50, 0);
     }
   }
 }
@@ -119,7 +126,7 @@
 
   @include mx.adaptive("margin-bottom", 150, 40, 0);
 
-  @media (max-width: 600px) {
+  @media (max-width: 500px) {
     margin-right: auto;
   }
 }

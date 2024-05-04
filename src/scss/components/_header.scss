@@ -73,7 +73,7 @@
       url(/src/img/header/money-right-desktop-1x.png);
     background-repeat: no-repeat;
     background-position: left 0 top
-        calc(236px + (330 - 236) * ((100vw - 375px) / (1920 - 375))),
+        calc(300px + (500 - 300) * ((100vw - 375px) / (1920 - 375))),
       right 0 top calc(225px + (530 - 225) * ((100vw - 375px) / (1920 - 375)));
     background-size: calc(95px + (218 - 95) * ((100vw - 375px) / (1920 - 375))),
       calc(95px + (218 - 95) * ((100vw - 375px) / (1920 - 375)));
@@ -170,6 +170,10 @@
   line-height: 100%; /* 20px */
   @include mx.adaptive("letter-spacing", -0.4, 0.2, 0);
   text-transform: uppercase;
+
+  @media (max-width: 550px) {
+    background: none;
+  }
 }
 
 .master-text span {
