@@ -152,7 +152,7 @@
 }
 
 .master-text {
-  @include mx.adaptive("max-width", 390, 255, 0);
+  @include mx.adaptive("max-width", 390, 275, 0);
   padding: calc(10px + (15 - 10) * ((100vw - 375px) / (1920 - 375)))
     calc(10px + (25 - 10) * ((100vw - 375px) / (1920 - 375)));
   border-radius: 6px;
@@ -161,7 +161,7 @@
 
   color: #fff;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 20, 14, 0);
+  @include mx.adaptive("font-size", 20, 16, 0);
   font-style: normal;
   font-weight: 450;
   line-height: 100%; /* 20px */
@@ -181,11 +181,11 @@
 
 .desc-wrapper {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 
   @include mx.adaptive("padding-left", 56, 13, 0);
 
-  @include mx.adaptive("gap", 14, 4, 0);
+  @include mx.adaptive("gap", 8, 4, 0);
 
   @media (max-width: 519px) {
     margin-bottom: 245px;
@@ -198,13 +198,13 @@
   .text {
     color: #fff;
     font-family: "Futura PT";
-    @include mx.adaptive("font-size", 40, 16, 0);
+    @include mx.adaptive("font-size", 40, 18, 0);
     font-style: normal;
     font-weight: 400;
     line-height: 90%; /* 36px */
     letter-spacing: -0.8px;
 
-    @include mx.adaptive("max-width", 500, 202, 0);
+    @include mx.adaptive("max-width", 500, 215, 0);
   }
 
   .price {
@@ -214,14 +214,15 @@
     background: #fff;
 
     color: #c60000;
+    text-align: center;
     font-family: "Futura PT";
-    @include mx.adaptive("font-size", 30, 13, 0);
+    @include mx.adaptive("font-size", 34, 15, 0);
     font-style: normal;
     font-weight: 600;
     line-height: 90%; /* 27px */
     @include mx.adaptive("letter-spacing", -0.6, -0.26, 0);
     text-transform: uppercase;
-    @include mx.adaptive("max-width", 194, 81, 0);
+    @include mx.adaptive("max-width", 224, 121, 0);
     width: 100%;
   }
 

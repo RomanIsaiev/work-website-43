@@ -16,7 +16,7 @@
 .developer-text {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 24, 15, 0);
+  @include mx.adaptive("font-size", 24, 17, 0);
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -31,7 +31,7 @@
 .insta-nickname {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 24, 15, 0);
+  @include mx.adaptive("font-size", 24, 17, 0);
   font-style: normal;
   font-weight: 300;
   line-height: normal;

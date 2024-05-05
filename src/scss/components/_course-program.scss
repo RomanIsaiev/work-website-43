@@ -127,7 +127,7 @@
 .question-name {
   color: #fff;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 26, 16, 0);
+  @include mx.adaptive("font-size", 26, 20, 0);
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
@@ -156,7 +156,7 @@
 .content-list .list-item {
   color: #fff;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 26, 15, 0);
+  @include mx.adaptive("font-size", 26, 17, 0);
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
@@ -184,7 +184,7 @@
 .attention-text {
   color: #fff;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 26, 15, 0);
+  @include mx.adaptive("font-size", 26, 17, 0);
   font-style: normal;
   font-weight: 400;
   line-height: 100%;

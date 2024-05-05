@@ -2,7 +2,7 @@
 
 .section-questions {
   background: #090909;
-  @include mx.adaptive("padding-top", 100, 50, 0);
+  @include mx.adaptive("padding-top", 200, 100, 0);
   @include mx.adaptive("padding-bottom", 200, 100, 0);
 }
 
@@ -95,7 +95,7 @@
 .question-name-two {
   color: #fff;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 27, 16, 0);
+  @include mx.adaptive("font-size", 27, 18, 0);
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 15px */
@@ -108,7 +108,7 @@
 
   color: #fff;
   font-family: "Futura PT";
-  @include mx.adaptive("font-size", 27, 16, 0);
+  @include mx.adaptive("font-size", 27, 18, 0);
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 15px */
