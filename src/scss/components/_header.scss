@@ -13,6 +13,12 @@
     background-size: 101%;
   }
 
+  @media (max-width: 520px) and (min-device-pixel-ratio: 2),
+    (max-width: 520px) and (min-resolution: 192dpi),
+    (max-width: 520px) and (min-resolution: 2dppx) {
+    background-image: url(/src/img/header/header-background-mobile-2x.jpg);
+  }
+
   @media (min-width: 520px) {
     background-image: url(/src/img/header/header-background-tablet-1x.jpg);
     background-size: 110%;
@@ -112,6 +118,14 @@
     @include mx.adaptive("margin-bottom", 20, 0, 0);
   }
 }
+
+// @media (min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .header {
+//     background-image: url(/src/img/header/header-background-mobile-2x.jpg);
+//   }
+// }
 
 .master-wrapper-mobile {
   padding: 15px 25px;

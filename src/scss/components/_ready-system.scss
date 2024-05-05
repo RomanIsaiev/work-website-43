@@ -33,12 +33,16 @@
     background-position: center;
     background-size: cover;
 
-    @media (max-width: 550px) {
-    }
-
     @media (max-width: 550px) and (min-device-pixel-ratio: 2),
       (max-width: 550px) and (min-resolution: 192dpi),
       (max-width: 550px) and (min-resolution: 2dppx) {
+      padding-top: 210px;
+      border: inherit;
+      box-shadow: none;
+      background-image: none;
+    }
+
+    @media (max-width: 550px) {
       padding-top: 210px;
       border: inherit;
       box-shadow: none;
@@ -54,13 +58,13 @@
     }
   }
 
-  // @media (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   .wrapper {
-  //     background-image: url(/src/img/ready-system/ready-system-background-desktop-2x.png);
-  //   }
-  // }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .wrapper {
+      background-image: url(/src/img/ready-system/ready-system-background-desktop-2x.png);
+    }
+  }
 
   .box {
     display: flex;
