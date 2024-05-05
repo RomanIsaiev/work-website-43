@@ -175,7 +175,10 @@
 }
 
 .master-title-container {
-  @include mx.adaptive("max-width", 756, 347, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mx.adaptive("max-width", 800, 347, 0);
   margin-left: auto;
   margin-right: auto;
   @include mx.adaptive("margin-bottom", 40, 30, 0);
