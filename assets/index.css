@@ -2736,6 +2736,13 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .ready-system .wrapper {
+    padding-top: 210px;
+    border: inherit;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-image: none;
+  }
   .ready-system .box {
     margin-right: auto;
   }
@@ -2760,6 +2767,12 @@ button {
   }
   .ready-system.second .wrapper {
     background-image: url(/assets/money-left-2x.png), url(/assets/money-right-2x.png), none;
+  }
+}
+
+@media (max-width: 520px) and (min-device-pixel-ratio: 2), (max-width: 520px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 520px) and (min--moz-device-pixel-ratio: 2), (max-width: 520px) and (min-resolution: 192dpi), (max-width: 520px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: url(/assets/header-background-mobile-2x.jpg);
   }
 }
 
@@ -2796,6 +2809,9 @@ button {
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header .container {
     background-image: url(/assets/money-left-desktop-2x.png), url(/assets/money-right-desktop-2x.png);
+  }
+  .ready-system .wrapper {
+    background-image: url(/assets/ready-system-background-desktop-2x.png);
   }
   .difference {
     background-image: url(/assets/background-desktop-2x.jpg);
