@@ -1367,9 +1367,23 @@ button {
 }
 
 .master-title-container {
-  max-width: -webkit-calc(347px + 409 * (100vw - 375px) / 1545);
-  max-width: -moz-calc(347px + 409 * (100vw - 375px) / 1545);
-  max-width: calc(347px + 409 * (100vw - 375px) / 1545);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  max-width: -webkit-calc(347px + 453 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(347px + 453 * (100vw - 375px) / 1545);
+  max-width: calc(347px + 453 * (100vw - 375px) / 1545);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -webkit-calc(30px + 10 * (100vw - 375px) / 1545);
