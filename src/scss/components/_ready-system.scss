@@ -48,19 +48,11 @@
       box-shadow: none;
       background-image: none;
     }
-
-    @media (min-width: 550px) and (min-device-pixel-ratio: 2),
-      (min-width: 550px) and (min-resolution: 192dpi),
-      (min-width: 550px) and (min-resolution: 2dppx) {
-      .wrapper {
-        background-image: url(/src/img/ready-system/ready-system-background-desktop-2x.png);
-      }
-    }
   }
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media (min-width: 550px) and (min-device-pixel-ratio: 2),
+    (min-width: 550px) and (min-resolution: 192dpi),
+    (min-width: 550px) and (min-resolution: 2dppx) {
     .wrapper {
       background-image: url(/src/img/ready-system/ready-system-background-desktop-2x.png);
     }
@@ -198,16 +190,21 @@
     }
   }
 
-  .wrapper {
-    background-image: url(/src/img/how-works/money-left-1x.png),
-      url(/src/img/master-format/money-right-1x.png),
-      url(/src/img/ready-system/ready-system-background-desktop-1x.png);
-    background-repeat: no-repeat;
-    background-position: left 0 top 0,
-      right 0 bottom calc(80px + (150 - 80) * ((100vw - 375px) / (1920 - 375))),
-      center;
-    background-size: calc(92px + (242 - 92) * ((100vw - 375px) / (1920 - 375))),
-      calc(163px + (309 - 163) * ((100vw - 375px) / (1920 - 375))), 120%;
+  @media (min-width: 550px) {
+    .wrapper {
+      background-image: url(/src/img/how-works/money-left-1x.png),
+        url(/src/img/master-format/money-right-1x.png),
+        url(/src/img/ready-system/ready-system-background-desktop-1x.png);
+      background-repeat: no-repeat;
+      background-position: left 0 top 0,
+        right 0 bottom
+          calc(80px + (150 - 80) * ((100vw - 375px) / (1920 - 375))),
+        center;
+      background-size: calc(
+          92px + (242 - 92) * ((100vw - 375px) / (1920 - 375))
+        ),
+        calc(163px + (309 - 163) * ((100vw - 375px) / (1920 - 375))), 120%;
+    }
 
     @media (min-width: 768px) {
       background-size: calc(
@@ -218,29 +215,14 @@
   }
 }
 
-@media (max-width: 550px) {
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .ready-system.second {
-      .wrapper {
-        background-image: url(/src/img/how-works/money-left-2x.png),
-          url(/src/img/master-format/money-right-2x.png),
-          url(/src/img/ready-system/ready-system-background-desktop-2x.png);
-      }
-    }
-  }
-}
-
-@media (max-width: 550px) {
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .ready-system.second {
-      .wrapper {
-        background-image: url(/src/img/how-works/money-left-2x.png),
-          url(/src/img/master-format/money-right-2x.png), none;
-      }
+@media (min-width: 550px) and (min-device-pixel-ratio: 2),
+  (min-width: 550px) and (min-resolution: 192dpi),
+  (min-width: 550px) and (min-resolution: 2dppx) {
+  .ready-system.second {
+    .wrapper {
+      background-image: url(/src/img/how-works/money-left-2x.png),
+        url(/src/img/master-format/money-right-2x.png),
+        url(/src/img/ready-system/ready-system-background-desktop-2x.png);
     }
   }
 }
