@@ -209,6 +209,20 @@ button {
   cursor: pointer;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   padding-top: -webkit-calc(0px + 60 * (100vw - 375px) / 1545);
   padding-top: -moz-calc(0px + 60 * (100vw - 375px) / 1545);
