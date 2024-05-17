@@ -2634,9 +2634,9 @@ button {
   .ready-system.second .wrapper {
     background-image: url(/assets/money-left-1x.png), url(/assets/money-right-1x.png), url(/assets/ready-system-background-desktop-1x.png);
     background-repeat: no-repeat;
-    background-position: left 0 top 0, right 0 bottom -webkit-calc(80px + 70 * (100vw - 375px) / 1545), center;
-    background-position: left 0 top 0, right 0 bottom -moz-calc(80px + 70 * (100vw - 375px) / 1545), center;
-    background-position: left 0 top 0, right 0 bottom calc(80px + 70 * (100vw - 375px) / 1545), center;
+    background-position: left 0 top 0, right 0 bottom -webkit-calc(80px + 50 * (100vw - 375px) / 1545), center;
+    background-position: left 0 top 0, right 0 bottom -moz-calc(80px + 50 * (100vw - 375px) / 1545), center;
+    background-position: left 0 top 0, right 0 bottom calc(80px + 50 * (100vw - 375px) / 1545), center;
     background-size: -webkit-calc(92px + 150 * (100vw - 375px) / 1545), -webkit-calc(163px + 146 * (100vw - 375px) / 1545), 120%;
     background-size: -moz-calc(92px + 150 * (100vw - 375px) / 1545), -moz-calc(163px + 146 * (100vw - 375px) / 1545), 120%;
     background-size: calc(92px + 150 * (100vw - 375px) / 1545), calc(163px + 146 * (100vw - 375px) / 1545), 120%;
