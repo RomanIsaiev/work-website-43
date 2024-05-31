@@ -2721,6 +2721,20 @@ button {
   }
 }
 
+@media screen and (min-width: 935px) {
+  .achievement-container .achievement-list {
+    max-width: 900px;
+  }
+}
+
+@media screen and (min-width: 1043px) {
+  .master-list {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: 1075px) {
   .teach-list {
     max-width: 700px;
@@ -2733,11 +2747,14 @@ button {
   }
 }
 
+@media screen and (min-width: 1367px) {
+  .achievement-container .achievement-list {
+    max-width: 1300px;
+  }
+}
+
 @media (min-width: 1400px) {
   .teach-list {
-    max-width: 1400px;
-  }
-  .achievement-container .achievement-list {
     max-width: 1400px;
   }
 }
