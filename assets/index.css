@@ -248,16 +248,16 @@ button {
   background-size: calc(95px + 123 * (100vw - 375px) / 1545), calc(95px + 123 * (100vw - 375px) / 1545);
 }
 .header .header-title-contianer {
-  padding-left: -webkit-calc(13px + 43 * (100vw - 375px) / 1545);
-  padding-left: -moz-calc(13px + 43 * (100vw - 375px) / 1545);
-  padding-left: calc(13px + 43 * (100vw - 375px) / 1545);
+  padding-left: -webkit-calc(33px + 23 * (100vw - 375px) / 1545);
+  padding-left: -moz-calc(33px + 23 * (100vw - 375px) / 1545);
+  padding-left: calc(33px + 23 * (100vw - 375px) / 1545);
 }
 .header .title {
   color: #fff;
   font-family: "Futura PT";
-  font-size: -webkit-calc(49px + 111 * (100vw - 375px) / 1545);
-  font-size: -moz-calc(49px + 111 * (100vw - 375px) / 1545);
-  font-size: calc(49px + 111 * (100vw - 375px) / 1545);
+  font-size: -webkit-calc(50px + 130 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(50px + 130 * (100vw - 375px) / 1545);
+  font-size: calc(50px + 130 * (100vw - 375px) / 1545);
   font-style: normal;
   font-weight: 300;
   line-height: 70%; /* 192px */
@@ -273,9 +273,9 @@ button {
 }
 .header .subtitle {
   font-family: "Futura PT";
-  font-size: -webkit-calc(40px + 90 * (100vw - 375px) / 1545);
-  font-size: -moz-calc(40px + 90 * (100vw - 375px) / 1545);
-  font-size: calc(40px + 90 * (100vw - 375px) / 1545);
+  font-size: -webkit-calc(50px + 100 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(50px + 100 * (100vw - 375px) / 1545);
+  font-size: calc(50px + 100 * (100vw - 375px) / 1545);
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 156px */
@@ -313,9 +313,9 @@ button {
 }
 
 .master-text {
-  max-width: -webkit-calc(275px + 115 * (100vw - 375px) / 1545);
-  max-width: -moz-calc(275px + 115 * (100vw - 375px) / 1545);
-  max-width: calc(275px + 115 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(320px + 70 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(320px + 70 * (100vw - 375px) / 1545);
+  max-width: calc(320px + 70 * (100vw - 375px) / 1545);
   padding: -webkit-calc(10px + 5 * (100vw - 375px) / 1545) -webkit-calc(10px + 15 * (100vw - 375px) / 1545);
   padding: -moz-calc(10px + 5 * (100vw - 375px) / 1545) -moz-calc(10px + 15 * (100vw - 375px) / 1545);
   padding: calc(10px + 5 * (100vw - 375px) / 1545) calc(10px + 15 * (100vw - 375px) / 1545);
@@ -351,9 +351,9 @@ button {
   -webkit-align-items: center;
      -moz-box-align: center;
           align-items: center;
-  padding-left: -webkit-calc(13px + 43 * (100vw - 375px) / 1545);
-  padding-left: -moz-calc(13px + 43 * (100vw - 375px) / 1545);
-  padding-left: calc(13px + 43 * (100vw - 375px) / 1545);
+  padding-left: -webkit-calc(33px + 23 * (100vw - 375px) / 1545);
+  padding-left: -moz-calc(33px + 23 * (100vw - 375px) / 1545);
+  padding-left: calc(33px + 23 * (100vw - 375px) / 1545);
   gap: -webkit-calc(4px + 4 * (100vw - 375px) / 1545);
   gap: -moz-calc(4px + 4 * (100vw - 375px) / 1545);
   gap: calc(4px + 4 * (100vw - 375px) / 1545);
@@ -368,9 +368,9 @@ button {
   font-weight: 400;
   line-height: 90%; /* 36px */
   letter-spacing: -0.8px;
-  max-width: -webkit-calc(215px + 285 * (100vw - 375px) / 1545);
-  max-width: -moz-calc(215px + 285 * (100vw - 375px) / 1545);
-  max-width: calc(215px + 285 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(175px + 225 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(175px + 225 * (100vw - 375px) / 1545);
+  max-width: calc(175px + 225 * (100vw - 375px) / 1545);
 }
 .desc-wrapper .price {
   padding: -webkit-calc(3px + 4 * (100vw - 375px) / 1545) -webkit-calc(5px + 10 * (100vw - 375px) / 1545);
@@ -379,7 +379,6 @@ button {
   border-radius: 5px;
   background: #fff;
   color: #c60000;
-  text-align: center;
   font-family: "Futura PT";
   font-size: -webkit-calc(15px + 19 * (100vw - 375px) / 1545);
   font-size: -moz-calc(15px + 19 * (100vw - 375px) / 1545);
@@ -391,9 +390,9 @@ button {
   letter-spacing: -moz-calc(-0.26px + -0.34 * (100vw - 375px) / 1545);
   letter-spacing: calc(-0.26px + -0.34 * (100vw - 375px) / 1545);
   text-transform: uppercase;
-  max-width: -webkit-calc(121px + 103 * (100vw - 375px) / 1545);
-  max-width: -moz-calc(121px + 103 * (100vw - 375px) / 1545);
-  max-width: calc(121px + 103 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(90px + 110 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(90px + 110 * (100vw - 375px) / 1545);
+  max-width: calc(90px + 110 * (100vw - 375px) / 1545);
   width: 100%;
 }
 .desc-wrapper .price span {
