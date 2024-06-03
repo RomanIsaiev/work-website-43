@@ -354,23 +354,23 @@ button {
   padding-left: -webkit-calc(33px + 23 * (100vw - 375px) / 1545);
   padding-left: -moz-calc(33px + 23 * (100vw - 375px) / 1545);
   padding-left: calc(33px + 23 * (100vw - 375px) / 1545);
-  gap: -webkit-calc(4px + 4 * (100vw - 375px) / 1545);
-  gap: -moz-calc(4px + 4 * (100vw - 375px) / 1545);
-  gap: calc(4px + 4 * (100vw - 375px) / 1545);
+  gap: -webkit-calc(4px + 2 * (100vw - 375px) / 1545);
+  gap: -moz-calc(4px + 2 * (100vw - 375px) / 1545);
+  gap: calc(4px + 2 * (100vw - 375px) / 1545);
 }
 .desc-wrapper .text {
   color: #fff;
   font-family: "Futura PT";
-  font-size: -webkit-calc(18px + 22 * (100vw - 375px) / 1545);
-  font-size: -moz-calc(18px + 22 * (100vw - 375px) / 1545);
-  font-size: calc(18px + 22 * (100vw - 375px) / 1545);
+  font-size: -webkit-calc(16px + 20 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(16px + 20 * (100vw - 375px) / 1545);
+  font-size: calc(16px + 20 * (100vw - 375px) / 1545);
   font-style: normal;
   font-weight: 400;
   line-height: 90%; /* 36px */
   letter-spacing: -0.8px;
-  max-width: -webkit-calc(175px + 225 * (100vw - 375px) / 1545);
-  max-width: -moz-calc(175px + 225 * (100vw - 375px) / 1545);
-  max-width: calc(175px + 225 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(200px + 300 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(200px + 300 * (100vw - 375px) / 1545);
+  max-width: calc(200px + 300 * (100vw - 375px) / 1545);
 }
 .desc-wrapper .price {
   padding: -webkit-calc(3px + 4 * (100vw - 375px) / 1545) -webkit-calc(5px + 10 * (100vw - 375px) / 1545);
@@ -379,10 +379,11 @@ button {
   border-radius: 5px;
   background: #fff;
   color: #c60000;
+  text-align: center;
   font-family: "Futura PT";
-  font-size: -webkit-calc(15px + 19 * (100vw - 375px) / 1545);
-  font-size: -moz-calc(15px + 19 * (100vw - 375px) / 1545);
-  font-size: calc(15px + 19 * (100vw - 375px) / 1545);
+  font-size: -webkit-calc(14px + 20 * (100vw - 375px) / 1545);
+  font-size: -moz-calc(14px + 20 * (100vw - 375px) / 1545);
+  font-size: calc(14px + 20 * (100vw - 375px) / 1545);
   font-style: normal;
   font-weight: 600;
   line-height: 90%; /* 27px */
@@ -390,9 +391,9 @@ button {
   letter-spacing: -moz-calc(-0.26px + -0.34 * (100vw - 375px) / 1545);
   letter-spacing: calc(-0.26px + -0.34 * (100vw - 375px) / 1545);
   text-transform: uppercase;
-  max-width: -webkit-calc(90px + 110 * (100vw - 375px) / 1545);
-  max-width: -moz-calc(90px + 110 * (100vw - 375px) / 1545);
-  max-width: calc(90px + 110 * (100vw - 375px) / 1545);
+  max-width: -webkit-calc(100px + 120 * (100vw - 375px) / 1545);
+  max-width: -moz-calc(100px + 120 * (100vw - 375px) / 1545);
+  max-width: calc(100px + 120 * (100vw - 375px) / 1545);
   width: 100%;
 }
 .desc-wrapper .price span {
